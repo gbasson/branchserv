@@ -1,0 +1,18 @@
+﻿<GlobalMap>
+  <Items>
+    <GlobalMapComponent>
+      <EntityName>msdyn_workorder</EntityName>
+      <ViewName>Emergency_Calls</ViewName>
+    </GlobalMapComponent>
+    <GlobalMapComponent>
+      <EntityName>msdyn_workorder</EntityName>
+      <ViewName>Today's Calls</ViewName>
+      <IsInitial>true</IsInitial>
+    </GlobalMapComponent>
+    <GlobalMapComponent>
+      <EntityName>msdyn_workorder</EntityName>
+      <ViewName>Unscheduled Calls</ViewName>
+      <IsInitial>false</IsInitial>
+    </GlobalMapComponent>
+  </Items>
+</GlobalMap>

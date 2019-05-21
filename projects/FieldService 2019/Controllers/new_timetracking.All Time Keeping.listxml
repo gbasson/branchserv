@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>new_timetracking</EntityName>
+    <CamelCase>new_timetracking</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>All Time Keeping</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <Fetch version="1.0">
+    <entity name="new_timetracking">
+      <filter type="and">
+        <condition attribute="createdby" operator="eq-userid" />
+      </filter>
+    </entity>
+  </Fetch>
+  <OrderBy>!createdon;new_name</OrderBy>
+  <SerializedBindings>
+    <string>createdon</string>
+    <string>modifiedon</string>
+    <string>new_name</string>
+    <string>new_starttimestamp</string>
+    <string>new_stoptimestamp</string>
+    <string>new_timestampcalc</string>
+    <string>new_timetrackingid</string>
+    <string>new_timetype</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>320</Width>
+      <Height>50</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <Buttons>Export;Email</Buttons>
+      <SerializedChildren>
+        <CellTemplate SchemaName="new_timetype">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>10,29,298,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>102,4,193,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="createdon">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,4,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>0</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

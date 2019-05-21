@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>new_servicetype</EntityName>
+    <CamelCase>new_servicetype</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Service Types - Service Call Types</Name>
+  <Kind>LookupList</Kind>
+  <IsDefault>false</IsDefault>
+  <IsHidden>true</IsHidden>
+  <AutoWideWidth>0</AutoWideWidth>
+  <Fetch version="1.0">
+    <entity name="new_servicetype">
+      <filter type="and">
+        <condition attribute="new_servicecalltype" operator="eq" value="{{msdyn_workordertype}}" />
+      </filter>
+    </entity>
+  </Fetch>
+  <OrderBy>new_name</OrderBy>
+  <FilterAllowedFields>new_servicecalltype</FilterAllowedFields>
+  <SerializedBindings>
+    <string>createdon</string>
+    <string>modifiedon</string>
+    <string>new_name</string>
+    <string>ownerid</string>
+    <string>new_servicecalltype</string>
+    <string>new_servicetypeid</string>
+    <string>new_servicecalltype.msdyn_workordertype.createdon</string>
+    <string>new_servicecalltype.msdyn_workordertype.msdyn_incidentrequired</string>
+    <string>new_servicecalltype.msdyn_workordertype.modifiedon</string>
+    <string>new_servicecalltype.msdyn_workordertype.msdyn_name</string>
+    <string>new_servicecalltype.msdyn_workordertype.ownerid</string>
+    <string>new_servicecalltype.msdyn_workordertype.msdyn_pricelist</string>
+    <string>new_servicecalltype.msdyn_workordertype.overriddencreatedon</string>
+    <string>new_servicecalltype.msdyn_workordertype.msdyn_workordertypeid</string>
+    <string>new_servicecalltype.msdyn_workordertype.statecode</string>
+    <string>new_servicecalltype.msdyn_workordertype.statuscode</string>
+    <string>new_servicecalltype.msdyn_workordertype.msdyn_taxable</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>240</Width>
+      <Height>40</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="new_name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,2,239,19</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>0</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

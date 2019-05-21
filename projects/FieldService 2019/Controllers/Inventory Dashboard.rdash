@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Columns>2</Columns>
+  <Rows>1</Rows>
+  <Items>
+    <DashboardComponent xsi:type="DashboardEntityComponent" Kind="List" Binding="new_inventoryworksheet;new_inventoryworksheet.*:new_inventoryworksheet.@Inventory Worksheet" Options="3">
+      <Bounds>0,0,1,1</Bounds>
+    </DashboardComponent>
+    <DashboardComponent xsi:type="DashboardEntityComponent" Kind="List" Binding="new_inventoryworksheetdetail;new_inventoryworksheetdetail.*:new_inventoryworksheetdetail.@Inventory Worksheet Details" Options="3">
+      <Bounds>1,0,1,1</Bounds>
+    </DashboardComponent>
+  </Items>
+</Dashboard>

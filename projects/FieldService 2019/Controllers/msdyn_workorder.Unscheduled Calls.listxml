@@ -1,0 +1,339 @@
+﻿<EntityList>
+  <Attributes>
+    <EntityName>msdyn_workorder</EntityName>
+    <CamelCase>msdyn_workorder</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding/>
+  </Attributes>
+  <Name>Unscheduled Calls</Name>
+  <Kind>List</Kind>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>msdyn_name</OrderBy>
+  <SortAllowedFields>msdyn_city;msdyn_serviceaccount;msdyn_workordertype;new_starttime</SortAllowedFields>
+  <FilterAllowedFields>msdyn_city;msdyn_serviceaccount;msdyn_workordertype</FilterAllowedFields>
+  <SerializedBindings>
+    <string>msdyn_address1</string>
+    <string>msdyn_address2</string>
+    <string>msdyn_address3</string>
+    <string>msdyn_addressname</string>
+    <string>msdyn_agreement</string>
+    <string>msdyn_billingaccount</string>
+    <string>msdyn_bookingsummary</string>
+    <string>new_branchcontact</string>
+    <string>new_callfrom</string>
+    <string>msdyn_childindex</string>
+    <string>msdyn_city</string>
+    <string>msdyn_closedby</string>
+    <string>msdyn_timeclosed</string>
+    <string>msdyn_country</string>
+    <string>createdby</string>
+    <string>createdonbehalfby</string>
+    <string>createdon</string>
+    <string>transactioncurrencyid</string>
+    <string>msdyn_datewindowend</string>
+    <string>msdyn_datewindowstart</string>
+    <string>new_emergencyappt</string>
+    <string>msdyn_estimatesubtotalamount</string>
+    <string>msdyn_estimatesubtotalamount_base</string>
+    <string>exchangerate</string>
+    <string>msdyn_followupnote</string>
+    <string>msdyn_followuprequired</string>
+    <string>importsequencenumber</string>
+    <string>msdyn_instructions</string>
+    <string>msdyn_internalflags</string>
+    <string>msdyn_isfollowup</string>
+    <string>msdyn_ismobile</string>
+    <string>msdyn_latitude</string>
+    <string>msdyn_longitude</string>
+    <string>modifiedby</string>
+    <string>modifiedonbehalfby</string>
+    <string>modifiedon</string>
+    <string>msdyn_opportunityid</string>
+    <string>msdyn_parentworkorder</string>
+    <string>ownerid</string>
+    <string>owningbusinessunit</string>
+    <string>owningteam</string>
+    <string>owninguser</string>
+    <string>new_phone</string>
+    <string>msdyn_postalcode</string>
+    <string>msdyn_preferredresource</string>
+    <string>msdyn_pricelist</string>
+    <string>msdyn_customerasset</string>
+    <string>msdyn_primaryincidentdescription</string>
+    <string>msdyn_primaryincidentestimatedduration</string>
+    <string>msdyn_primaryincidenttype</string>
+    <string>msdyn_priority</string>
+    <string>new_priority</string>
+    <string>processid</string>
+    <string>overriddencreatedon</string>
+    <string>msdyn_reportedbycontact</string>
+    <string>new_resolutioncode</string>
+    <string>new_resolutiontype</string>
+    <string>msdyn_taxcode</string>
+    <string>msdyn_serviceaccount</string>
+    <string>msdyn_name</string>
+    <string>msdyn_workordertype</string>
+    <string>new_servicecode</string>
+    <string>msdyn_servicerequest</string>
+    <string>msdyn_serviceterritory</string>
+    <string>new_servicetype</string>
+    <string>msdyn_workordersummary</string>
+    <string>stageid</string>
+    <string>msdyn_stateorprovince</string>
+    <string>statecode</string>
+    <string>statuscode</string>
+    <string>msdyn_substatus</string>
+    <string>msdyn_subtotalamount</string>
+    <string>msdyn_subtotalamount_base</string>
+    <string>msdyn_systemstatus</string>
+    <string>msdyn_taxable</string>
+    <string>new_resolutionnotes</string>
+    <string>msdyn_timefrompromised</string>
+    <string>msdyn_timegroup</string>
+    <string>msdyn_timegroupdetailselected</string>
+    <string>msdyn_timetopromised</string>
+    <string>msdyn_timewindowend</string>
+    <string>msdyn_timewindowstart</string>
+    <string>timezoneruleversionnumber</string>
+    <string>msdyn_totalamount</string>
+    <string>msdyn_totalamount_base</string>
+    <string>msdyn_totalsalestax</string>
+    <string>msdyn_totalsalestax_base</string>
+    <string>traversedpath</string>
+    <string>utcconversiontimezonecode</string>
+    <string>versionnumber</string>
+    <string>msdyn_workorderid</string>
+    <string>msdyn_worklocation</string>
+  </SerializedBindings>
+  <IsHidden>true</IsHidden>
+  <HasGpsFields>true</HasGpsFields>
+  <MaxColumns>0</MaxColumns>
+  <TemplateSelectorRule>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="7" version="0"&gt;&lt;branch info="Conditional color coding" e="true"&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.new_priority&lt;/var&gt;&lt;arg&gt;Lookup:msdyn_priority,3298cd5f-e863-e611-80e7-5065f38b5171,Emergency&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;TemplateIndex&lt;/var&gt;&lt;arg&gt;Integer:1&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.new_priority&lt;/var&gt;&lt;arg&gt;Lookup:msdyn_priority,3534da72-e963-e611-80e7-5065f38b5171,Standard&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;TemplateIndex&lt;/var&gt;&lt;arg&gt;Integer:3&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="true"&gt;&lt;var&gt;Entity.new_priority&lt;/var&gt;&lt;arg&gt;Lookup:msdyn_priority,ff734380-e963-e611-80e7-5065f38b5171,Appointment&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;TemplateIndex&lt;/var&gt;&lt;arg&gt;Integer:2&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</TemplateSelectorRule>
+  <Fetch version="1.0">
+    <entity name="msdyn_workorder">
+      <filter type="and">
+        <condition attribute="createdon" operator="on-or-after" value="2017-02-10"/>
+        <condition attribute="statecode" operator="eq" value="0"/>
+        <filter type="and">
+          <condition attribute="msdyn_systemstatus" operator="eq" value="690970000"/>
+          <condition attribute="new_assigntome" operator="ne" value="1"/>
+        </filter>
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="msdyn_city" method="Contains"/>
+    <attribute schema="msdyn_name" method="Contains"/>
+    <attribute schema="msdyn_stateorprovince" method="Contains"/>
+    <attribute schema="msdyn_workordertype" method="Contains" reference="true"/>
+    <attribute schema="new_customername" method="Contains"/>
+    <attribute schema="new_priority" method="Contains" reference="true"/>
+  </Search>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>480</Width>
+      <Height>70</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_serviceaccount">
+          <StyleName>primary</StyleName>
+          <Bounds>219,0,182,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_stateorprovince">
+          <StyleName>primary</StyleName>
+          <Bounds>427,24,49,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_city">
+          <StyleName>primary</StyleName>
+          <Bounds>219,24,130,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_address1">
+          <StyleName>primary</StyleName>
+          <Bounds>2,24,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workordertype">
+          <StyleName>primary</StyleName>
+          <Bounds>2,48,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_primaryincidenttype">
+          <StyleName>primary</StyleName>
+          <Bounds>219,48,261,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_priority">
+          <StyleName>Primary_bold</StyleName>
+          <Bounds>2,0,122,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Unsch_Red</Name>
+      <Width>480</Width>
+      <Height>70</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_serviceaccount">
+          <StyleName>primary</StyleName>
+          <Bounds>219,0,182,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_stateorprovince">
+          <StyleName>primary</StyleName>
+          <Bounds>427,24,49,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_city">
+          <StyleName>primary</StyleName>
+          <Bounds>219,24,130,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_address1">
+          <StyleName>primary</StyleName>
+          <Bounds>2,24,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workordertype">
+          <StyleName>primary</StyleName>
+          <Bounds>2,48,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_primaryincidenttype">
+          <StyleName>primary</StyleName>
+          <Bounds>219,48,261,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_priority">
+          <StyleName>Emergency Red</StyleName>
+          <Bounds>2,0,122,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Unsch_Blue</Name>
+      <Width>480</Width>
+      <Height>70</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_serviceaccount">
+          <StyleName>primary</StyleName>
+          <Bounds>219,0,182,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_stateorprovince">
+          <StyleName>primary</StyleName>
+          <Bounds>427,24,49,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_city">
+          <StyleName>primary</StyleName>
+          <Bounds>219,24,130,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_address1">
+          <StyleName>primary</StyleName>
+          <Bounds>2,24,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workordertype">
+          <StyleName>primary</StyleName>
+          <Bounds>2,48,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_primaryincidenttype">
+          <StyleName>primary</StyleName>
+          <Bounds>219,48,261,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_priority">
+          <StyleName>Appointment Blue</StyleName>
+          <Bounds>2,0,122,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Unsch_Green</Name>
+      <Width>480</Width>
+      <Height>70</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_serviceaccount">
+          <StyleName>primary</StyleName>
+          <Bounds>219,0,182,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_stateorprovince">
+          <StyleName>primary</StyleName>
+          <Bounds>427,24,49,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_city">
+          <StyleName>primary</StyleName>
+          <Bounds>219,24,130,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_address1">
+          <StyleName>primary</StyleName>
+          <Bounds>2,24,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workordertype">
+          <StyleName>primary</StyleName>
+          <Bounds>2,48,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_primaryincidenttype">
+          <StyleName>primary</StyleName>
+          <Bounds>219,48,261,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_priority">
+          <StyleName>New Green</StyleName>
+          <Bounds>2,0,122,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties/>
+</EntityList>

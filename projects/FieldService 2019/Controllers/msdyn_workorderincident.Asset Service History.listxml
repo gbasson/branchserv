@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>msdyn_workorderincident</EntityName>
+    <CamelCase>msdyn_workorderincident</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Asset Service History</Name>
+  <Kind>AssociatedList</Kind>
+  <IsDefault>false</IsDefault>
+  <HasGpsFields>true</HasGpsFields>
+  <Fetch version="1.0">
+    <entity name="msdyn_workorderincident">
+      <filter type="and">
+        <condition attribute="statecode" operator="eq" value="0" />
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="msdyn_customerasset" method="Contains" reference="true" />
+    <attribute schema="msdyn_incidenttype" method="Contains" reference="true" />
+    <attribute schema="msdyn_workorder" method="Contains" reference="true" />
+    <attribute schema="statuscode" method="Contains" reference="true" />
+  </Search>
+  <OrderBy>!msdyn_workorder</OrderBy>
+  <SerializedBindings>
+    <string>createdon</string>
+    <string>msdyn_customerasset</string>
+    <string>msdyn_description</string>
+    <string>msdyn_estimatedduration</string>
+    <string>msdyn_incidenttype</string>
+    <string>msdyn_ismobile</string>
+    <string>msdyn_isprimary</string>
+    <string>modifiedon</string>
+    <string>msdyn_name</string>
+    <string>ownerid</string>
+    <string>owninguser</string>
+    <string>statecode</string>
+    <string>statuscode</string>
+    <string>msdyn_workorder</string>
+    <string>msdyn_workorderincidentid</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_address1</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_address2</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_address3</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_addressname</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_agreement</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_billingaccount</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_bookingsummary</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_childindex</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_city</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_closedby</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_timeclosed</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_country</string>
+    <string>msdyn_workorder.msdyn_workorder.createdby</string>
+    <string>msdyn_workorder.msdyn_workorder.createdonbehalfby</string>
+    <string>msdyn_workorder.msdyn_workorder.createdon</string>
+    <string>msdyn_workorder.msdyn_workorder.transactioncurrencyid</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_datewindowend</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_datewindowstart</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_estimatesubtotalamount</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_estimatesubtotalamount_base</string>
+    <string>msdyn_workorder.msdyn_workorder.exchangerate</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_followupnote</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_followuprequired</string>
+    <string>msdyn_workorder.msdyn_workorder.importsequencenumber</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_instructions</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_internalflags</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_isfollowup</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_ismobile</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_latitude</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_longitude</string>
+    <string>msdyn_workorder.msdyn_workorder.modifiedby</string>
+    <string>msdyn_workorder.msdyn_workorder.modifiedonbehalfby</string>
+    <string>msdyn_workorder.msdyn_workorder.modifiedon</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_opportunityid</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_parentworkorder</string>
+    <string>msdyn_workorder.msdyn_workorder.ownerid</string>
+    <string>msdyn_workorder.msdyn_workorder.owningbusinessunit</string>
+    <string>msdyn_workorder.msdyn_workorder.owningteam</string>
+    <string>msdyn_workorder.msdyn_workorder.owninguser</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_postalcode</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_pricelist</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_customerasset</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_primaryincidentdescription</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_primaryincidentestimatedduration</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_primaryincidenttype</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_priority</string>
+    <string>msdyn_workorder.msdyn_workorder.processid</string>
+    <string>msdyn_workorder.msdyn_workorder.overriddencreatedon</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_reportedbycontact</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_taxcode</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_serviceaccount</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_servicerequest</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_serviceterritory</string>
+    <string>msdyn_workorder.msdyn_workorder.stageid</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_stateorprovince</string>
+    <string>msdyn_workorder.msdyn_workorder.statecode</string>
+    <string>msdyn_workorder.msdyn_workorder.statuscode</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_substatus</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_subtotalamount</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_subtotalamount_base</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_systemstatus</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_taxable</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_timefrompromised</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_timegroup</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_timegroupdetailselected</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_timetopromised</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_timewindowend</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_timewindowstart</string>
+    <string>msdyn_workorder.msdyn_workorder.timezoneruleversionnumber</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_totalamount</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_totalamount_base</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_totalsalestax</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_totalsalestax_base</string>
+    <string>msdyn_workorder.msdyn_workorder.traversedpath</string>
+    <string>msdyn_workorder.msdyn_workorder.utcconversiontimezonecode</string>
+    <string>msdyn_workorder.msdyn_workorder.versionnumber</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_workorderid</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_worklocation</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_name</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_workordersummary</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_workordertype</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.bookableresourceid</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.msdyn_bookingstodrip</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.createdon</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.msdyn_enabledripscheduling</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.modifiedon</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.name</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.ownerid</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.statecode</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.statuscode</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.msdyn_timeoffapprovalrequired</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.userid</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource.bookableresource.msdyn_warehouse</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>240</Width>
+      <Height>40</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>8,2,211,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray_bold</StyleName>
+          <Bounds>8,24,55,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder.msdyn_workorder.msdyn_systemstatus">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>66,25,77,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>4</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder.msdyn_workorder.msdyn_preferredresource">
+          <IsConstant>false</IsConstant>
+          <StyleName>r_gray</StyleName>
+          <Bounds>145,24,76,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>10</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>0</Height>
+</EntityList>

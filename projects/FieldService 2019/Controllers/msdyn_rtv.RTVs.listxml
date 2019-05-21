@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>msdyn_rtv</EntityName>
+    <CamelCase>msdyn_rtv</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>RTVs</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <HasGpsFields>true</HasGpsFields>
+  <Fetch version="1.0">
+    <entity name="msdyn_rtv">
+      <filter type="and">
+        <condition attribute="statecode" operator="eq" value="0" />
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="msdyn_address1" method="Contains" />
+    <attribute schema="msdyn_booking" method="Contains" reference="true" />
+    <attribute schema="msdyn_city" method="Contains" />
+    <attribute schema="msdyn_country" method="Contains" />
+    <attribute schema="msdyn_name" method="Contains" />
+    <attribute schema="msdyn_originatingrma" method="Contains" reference="true" />
+    <attribute schema="msdyn_shipvia" method="Contains" reference="true" />
+    <attribute schema="msdyn_stateorprovince" method="Contains" />
+    <attribute schema="msdyn_substatus" method="Contains" reference="true" />
+    <attribute schema="msdyn_systemstatus" method="Contains" reference="true" />
+    <attribute schema="msdyn_taxcode" method="Contains" reference="true" />
+    <attribute schema="msdyn_vendor" method="Contains" reference="true" />
+    <attribute schema="msdyn_vendorcontact" method="Contains" reference="true" />
+    <attribute schema="msdyn_vendorrma" method="Contains" />
+    <attribute schema="transactioncurrencyid" method="Contains" reference="true" />
+  </Search>
+  <OrderBy>!msdyn_name</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_address1</string>
+    <string>msdyn_address2</string>
+    <string>msdyn_address3</string>
+    <string>msdyn_approveddeclinedby</string>
+    <string>msdyn_booking</string>
+    <string>msdyn_city</string>
+    <string>msdyn_country</string>
+    <string>createdby</string>
+    <string>createdon</string>
+    <string>transactioncurrencyid</string>
+    <string>exchangerate</string>
+    <string>msdyn_latitude</string>
+    <string>msdyn_longitude</string>
+    <string>modifiedon</string>
+    <string>msdyn_originalpurchaseorder</string>
+    <string>msdyn_originatingrma</string>
+    <string>ownerid</string>
+    <string>owningbusinessunit</string>
+    <string>owningteam</string>
+    <string>owninguser</string>
+    <string>msdyn_postalcode</string>
+    <string>overriddencreatedon</string>
+    <string>msdyn_referenceno</string>
+    <string>msdyn_requestdate</string>
+    <string>msdyn_returndate</string>
+    <string>msdyn_returnedby</string>
+    <string>msdyn_rtvid</string>
+    <string>msdyn_name</string>
+    <string>msdyn_shipvia</string>
+    <string>msdyn_stateorprovince</string>
+    <string>statecode</string>
+    <string>statuscode</string>
+    <string>msdyn_substatus</string>
+    <string>msdyn_systemstatus</string>
+    <string>msdyn_taxcode</string>
+    <string>msdyn_totalamount</string>
+    <string>msdyn_totalamount_base</string>
+    <string>msdyn_vendor</string>
+    <string>msdyn_vendorcontact</string>
+    <string>msdyn_vendorrma</string>
+    <string>msdyn_workorder</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>240</Width>
+      <Height>40</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>8,2,216,19</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_systemstatus">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>8,21,110,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_vendor">
+          <IsConstant>false</IsConstant>
+          <StyleName>r_gray</StyleName>
+          <Bounds>118,21,106,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <Height>0</Height>
+</EntityList>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>systemuser</EntityName>
+  <CamelCase>SystemUser</CamelCase>
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>General</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="fullname" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="businessunitid" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Address</Name>
+      <SerializedChildren />
+    </FormTab>
+  </SerializedChildrenV2>
+  <Navigation flexi="0" flexiHeader="1" flexiMaxLines="0">
+    <Name>Navigation</Name>
+    <SerializedChildren />
+  </Navigation>
+  <SharedVariableNames />
+  <PrimaryCommands>PrintReport||</PrimaryCommands>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+</EntityForm>

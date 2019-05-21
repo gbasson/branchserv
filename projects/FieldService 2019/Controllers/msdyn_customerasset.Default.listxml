@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>msdyn_customerasset</EntityName>
+    <CamelCase>msdyn_customerasset</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Default</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <Fetch version="1.0">
+    <entity name="msdyn_customerasset">
+      <filter type="and">
+        <condition attribute="statecode" operator="eq" value="0" />
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="msdyn_account" method="Contains" reference="true" />
+    <attribute schema="msdyn_masterasset" method="Contains" reference="true" />
+    <attribute schema="msdyn_name" method="Contains" />
+    <attribute schema="msdyn_parentasset" method="Contains" reference="true" />
+    <attribute schema="msdyn_product" method="Contains" reference="true" />
+    <attribute schema="msdyn_workorderproduct" method="Contains" reference="true" />
+    <attribute schema="ownerid" method="Contains" reference="true" />
+    <attribute schema="owningbusinessunit" method="Contains" reference="true" />
+    <attribute schema="statuscode" method="Contains" reference="true" />
+  </Search>
+  <OrderBy>msdyn_name;msdyn_account</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_account</string>
+    <string>msdyn_customerassetid</string>
+    <string>msdyn_name</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>360</Width>
+      <Height>60</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_account">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>1,3,227,22</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>15</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>1,28,227,22</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_account">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>1,3,227,22</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>40</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>new_vanstockorder</EntityName>
+    <CamelCase>new_vanstockorder</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Van Stock Orders</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <Fetch version="1.0">
+    <entity name="new_vanstockorder">
+      <filter type="and">
+        <condition attribute="ownerid" operator="eq-userid" />
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="new_requestnumber" method="Contains" />
+  </Search>
+  <OrderBy>!new_requestnumber</OrderBy>
+  <SerializedBindings>
+    <string>createdon</string>
+    <string>modifiedon</string>
+    <string>new_orderdate</string>
+    <string>ownerid</string>
+    <string>new_requestforpart</string>
+    <string>new_requestnumber</string>
+    <string>new_status</string>
+    <string>new_submit</string>
+    <string>new_vanstockorderid</string>
+    <string>new_warehouse</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>240</Width>
+      <Height>25</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="new_requestnumber">
+          <IsConstant>false</IsConstant>
+          <StyleName>black_bold</StyleName>
+          <Bounds>2,0,81,18</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="createdon">
+          <IsConstant>false</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>84,0,72,17</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_submit">
+          <IsConstant>false</IsConstant>
+          <StyleName>small red</StyleName>
+          <Bounds>211,0,29,17</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Submitted:">
+          <IsConstant>true</IsConstant>
+          <StyleName>small red</StyleName>
+          <Bounds>155,0,54,17</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>0</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

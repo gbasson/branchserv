@@ -1,0 +1,165 @@
+﻿<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:dummy="0" flexi="0" fleximode="3" fullscreen="0" resize="0" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>bookableresourcebooking</EntityName>
+  <CamelCase>BookableResourceBooking</CamelCase>
+  <SharedVariables>&lt;SharedVariables&gt;&lt;Variables&gt;&lt;SharedVariable usage="None"&gt;&lt;Name&gt;Service_Call&lt;/Name&gt;&lt;CrmType&gt;Entity&lt;/CrmType&gt;&lt;InnerType&gt;msdyn_workorder&lt;/InnerType&gt;&lt;/SharedVariable&gt;&lt;/Variables&gt;&lt;/SharedVariables&gt;</SharedVariables>
+  <PrimaryCommands>!defcmd</PrimaryCommands>
+  <SharedVariableNames>
+    <string>Service_Call.createdby</string>
+    <string>Service_Call.createdon</string>
+    <string>Service_Call.createdonbehalfby</string>
+    <string>Service_Call.exchangerate</string>
+    <string>Service_Call.importsequencenumber</string>
+    <string>Service_Call.modifiedby</string>
+    <string>Service_Call.modifiedon</string>
+    <string>Service_Call.modifiedonbehalfby</string>
+    <string>Service_Call.msdyn_address1</string>
+    <string>Service_Call.msdyn_address2</string>
+    <string>Service_Call.msdyn_address3</string>
+    <string>Service_Call.msdyn_addressname</string>
+    <string>Service_Call.msdyn_agreement</string>
+    <string>Service_Call.msdyn_billingaccount</string>
+    <string>Service_Call.msdyn_bookingsummary</string>
+    <string>Service_Call.msdyn_childindex</string>
+    <string>Service_Call.msdyn_city</string>
+    <string>Service_Call.msdyn_closedby</string>
+    <string>Service_Call.msdyn_country</string>
+    <string>Service_Call.msdyn_customerasset</string>
+    <string>Service_Call.msdyn_datewindowend</string>
+    <string>Service_Call.msdyn_datewindowstart</string>
+    <string>Service_Call.msdyn_estimatesubtotalamount</string>
+    <string>Service_Call.msdyn_estimatesubtotalamount_base</string>
+    <string>Service_Call.msdyn_followupnote</string>
+    <string>Service_Call.msdyn_followuprequired</string>
+    <string>Service_Call.msdyn_instructions</string>
+    <string>Service_Call.msdyn_internalflags</string>
+    <string>Service_Call.msdyn_isfollowup</string>
+    <string>Service_Call.msdyn_ismobile</string>
+    <string>Service_Call.msdyn_latitude</string>
+    <string>Service_Call.msdyn_longitude</string>
+    <string>Service_Call.msdyn_name</string>
+    <string>Service_Call.msdyn_opportunityid</string>
+    <string>Service_Call.msdyn_parentworkorder</string>
+    <string>Service_Call.msdyn_postalcode</string>
+    <string>Service_Call.msdyn_preferredresource</string>
+    <string>Service_Call.msdyn_pricelist</string>
+    <string>Service_Call.msdyn_primaryincidentdescription</string>
+    <string>Service_Call.msdyn_primaryincidentestimatedduration</string>
+    <string>Service_Call.msdyn_primaryincidenttype</string>
+    <string>Service_Call.msdyn_priority</string>
+    <string>Service_Call.msdyn_reportedbycontact</string>
+    <string>Service_Call.msdyn_serviceaccount</string>
+    <string>Service_Call.msdyn_servicerequest</string>
+    <string>Service_Call.msdyn_serviceterritory</string>
+    <string>Service_Call.msdyn_stateorprovince</string>
+    <string>Service_Call.msdyn_substatus</string>
+    <string>Service_Call.msdyn_subtotalamount</string>
+    <string>Service_Call.msdyn_subtotalamount_base</string>
+    <string>Service_Call.msdyn_systemstatus</string>
+    <string>Service_Call.msdyn_taxable</string>
+    <string>Service_Call.msdyn_taxcode</string>
+    <string>Service_Call.msdyn_timeclosed</string>
+    <string>Service_Call.msdyn_timefrompromised</string>
+    <string>Service_Call.msdyn_timegroup</string>
+    <string>Service_Call.msdyn_timegroupdetailselected</string>
+    <string>Service_Call.msdyn_timetopromised</string>
+    <string>Service_Call.msdyn_timewindowend</string>
+    <string>Service_Call.msdyn_timewindowstart</string>
+    <string>Service_Call.msdyn_totalamount</string>
+    <string>Service_Call.msdyn_totalamount_base</string>
+    <string>Service_Call.msdyn_totalsalestax</string>
+    <string>Service_Call.msdyn_totalsalestax_base</string>
+    <string>Service_Call.msdyn_worklocation</string>
+    <string>Service_Call.msdyn_workorderid</string>
+    <string>Service_Call.msdyn_workordersummary</string>
+    <string>Service_Call.msdyn_workordertype</string>
+    <string>Service_Call.new_afterhours</string>
+    <string>Service_Call.new_assigntome</string>
+    <string>Service_Call.new_branchcontact</string>
+    <string>Service_Call.new_callfrom</string>
+    <string>Service_Call.new_callstatus</string>
+    <string>Service_Call.new_completed</string>
+    <string>Service_Call.new_coveringdispatcher</string>
+    <string>Service_Call.new_customername</string>
+    <string>Service_Call.new_emergencyappt</string>
+    <string>Service_Call.new_endtime</string>
+    <string>Service_Call.new_incidenttype</string>
+    <string>Service_Call.new_incompletereason</string>
+    <string>Service_Call.new_phone</string>
+    <string>Service_Call.new_primaryoncalltech</string>
+    <string>Service_Call.new_priority</string>
+    <string>Service_Call.new_resolutioncode</string>
+    <string>Service_Call.new_resolutionnotes</string>
+    <string>Service_Call.new_resolutiontype</string>
+    <string>Service_Call.new_reviewbilling</string>
+    <string>Service_Call.new_secondaryoncalltech</string>
+    <string>Service_Call.new_service_code</string>
+    <string>Service_Call.new_servicecode</string>
+    <string>Service_Call.new_servicetype</string>
+    <string>Service_Call.new_siteequipment</string>
+    <string>Service_Call.new_starttime</string>
+    <string>Service_Call.new_todaycalls</string>
+    <string>Service_Call.overriddencreatedon</string>
+    <string>Service_Call.ownerid</string>
+    <string>Service_Call.owningbusinessunit</string>
+    <string>Service_Call.owningteam</string>
+    <string>Service_Call.owninguser</string>
+    <string>Service_Call.processid</string>
+    <string>Service_Call.stageid</string>
+    <string>Service_Call.statuscode</string>
+    <string>Service_Call.timezoneruleversionnumber</string>
+    <string>Service_Call.transactioncurrencyid</string>
+    <string>Service_Call.traversedpath</string>
+    <string>Service_Call.utcconversiontimezonecode</string>
+    <string>Service_Call.versionnumber</string>
+  </SharedVariableNames>
+  <ClassBinding>
+    <SerializedClassBinding name="#WorkOrder" label="WorkOrder" type="String"/>
+  </ClassBinding>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled</EnabledWorkflows>
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab">
+      <Name>Schedule</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="new_priority"/>
+        <DetailItem SchemaName="new_serviceaccount"/>
+        <DetailItem SchemaName="msdyn_workorder"/>
+        <DetailItem SchemaName="new_servicecalltype"/>
+        <DetailItem SchemaName="bookingstatus"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="starttime"/>
+        <DetailItem SchemaName="endtime"/>
+        <DetailItem SchemaName="duration"/>
+        <DetailItem SchemaName="new_address1"/>
+        <DetailItem SchemaName="new_city"/>
+        <DetailItem SchemaName="new_state"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_estimatedarrivaltime"/>
+        <DetailItem SchemaName="msdyn_actualarrivaltime"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_estimatedtravelduration"/>
+        <DetailItem SchemaName="msdyn_actualtravelduration"/>
+        <DetailItem SchemaName="msdyn_milestraveled"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_totalbillableduration"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="resource"/>
+        <DetailItem SchemaName="new_servicetype"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab">
+      <Name>Notes List</Name>
+      <Binding SchemaName="annotation.objectid"/>
+    </FormTab>
+  </SerializedChildrenV2>
+</EntityForm>

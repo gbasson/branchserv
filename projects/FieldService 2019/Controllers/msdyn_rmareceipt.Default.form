@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>msdyn_rmareceipt</EntityName>
+  <CamelCase>msdyn_rmareceipt</CamelCase>
+  <ClassBinding />
+  <SerializedChildren />
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>General</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="msdyn_name" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_rma" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_rmareceiptid" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_shipvia" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_datereceived" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_receivedby" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeader="1" flexiMaxLines="0" FlipMode="0">
+      <Name>RMA Receipt Products List</Name>
+      <LogicalName>msdyn_rmareceiptproduct.msdyn_rmareceipt</LogicalName>
+      <Binding SchemaName="msdyn_rmareceiptproduct.msdyn_rmareceipt">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+  </SerializedChildrenV2>
+  <Navigation flexi="0" flexiHeader="1" flexiMaxLines="0">
+    <Name>Navigation</Name>
+    <SerializedChildren />
+  </Navigation>
+  <PrimaryCommands>!defcmd</PrimaryCommands>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+  <SerializedContactInfo />
+</EntityForm>

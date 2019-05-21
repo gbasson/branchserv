@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>new_requestforparts</EntityName>
+    <CamelCase>new_requestforparts</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Request for Parts</Name>
+  <Kind>LookupList</Kind>
+  <IsDefault>false</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>new_name</OrderBy>
+  <SerializedBindings>
+    <string>createdon</string>
+    <string>new_description</string>
+    <string>modifiedon</string>
+    <string>ownerid</string>
+    <string>new_productid</string>
+    <string>new_productidnumber</string>
+    <string>new_qty</string>
+    <string>new_name</string>
+    <string>new_requestforpartsid</string>
+    <string>new_requeststatus</string>
+    <string>new_vendorname</string>
+    <string>new_warehousenum</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>300</Width>
+      <Height>40</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="new_name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,15,121,17</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_productid">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,0,300,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>4</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_qty">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>125,14,69,17</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_requeststatus">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>196,15,100,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>0</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

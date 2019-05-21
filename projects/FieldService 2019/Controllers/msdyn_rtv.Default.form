@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>msdyn_rtv</EntityName>
+  <CamelCase>msdyn_rtv</CamelCase>
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>General</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="msdyn_name" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_systemstatus" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_substatus" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_vendor" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_vendorcontact" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_requestdate" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_returnedby" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_returndate" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_approveddeclinedby" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_shipvia" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_booking" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_originalpurchaseorder" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_originatingrma" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_workorder" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="transactioncurrencyid" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_totalamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeader="1" flexiMaxLines="0" FlipMode="0">
+      <Name>RMA Receipt Products List</Name>
+      <LogicalName>msdyn_rmareceiptproduct.msdyn_rtv</LogicalName>
+      <Binding SchemaName="msdyn_rmareceiptproduct.msdyn_rtv">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Address</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="msdyn_address1" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_address2" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_city" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_stateorprovince" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_postalcode" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_country" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+  </SerializedChildrenV2>
+  <Navigation flexi="0" flexiHeader="1" flexiMaxLines="0">
+    <Name>Navigation</Name>
+    <SerializedChildren />
+  </Navigation>
+  <PrimaryCommands>!defcmd</PrimaryCommands>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+</EntityForm>

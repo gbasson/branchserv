@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>bookableresourcebooking</EntityName>
+    <CamelCase>bookableresourcebooking</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Bookings</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <IsHidden>true</IsHidden>
+  <HasGpsFields>true</HasGpsFields>
+  <AutoWideWidth>0</AutoWideWidth>
+  <Fetch version="1.0">
+    <entity name="bookableresourcebooking">
+      <filter type="and">
+        <condition attribute="statecode" operator="eq" value="0" />
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="name" method="Contains" />
+    <attribute schema="resource" method="Contains" reference="true" />
+    <attribute schema="msdyn_workorder" method="Contains" reference="true" />
+  </Search>
+  <OrderBy>starttime</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_actualarrivaltime</string>
+    <string>msdyn_actualtravelduration</string>
+    <string>bookableresourcebookingid</string>
+    <string>msdyn_bookingmethod</string>
+    <string>bookingstatus</string>
+    <string>msdyn_cascadecrewchanges</string>
+    <string>createdon</string>
+    <string>transactioncurrencyid</string>
+    <string>duration</string>
+    <string>endtime</string>
+    <string>msdyn_estimatedarrivaltime</string>
+    <string>msdyn_estimatedtravelduration</string>
+    <string>importsequencenumber</string>
+    <string>msdyn_latitude</string>
+    <string>msdyn_longitude</string>
+    <string>msdyn_milestraveled</string>
+    <string>modifiedon</string>
+    <string>name</string>
+    <string>ownerid</string>
+    <string>msdyn_preventtimestampcreation</string>
+    <string>new_priority</string>
+    <string>resource</string>
+    <string>msdyn_resourcegroup</string>
+    <string>msdyn_workorder</string>
+    <string>starttime</string>
+    <string>statecode</string>
+    <string>statuscode</string>
+    <string>msdyn_totalbillableduration</string>
+    <string>msdyn_totalbreakduration</string>
+    <string>msdyn_totalcost</string>
+    <string>msdyn_totalcost_base</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_address1</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_address2</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_address3</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_addressname</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_billingaccount</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_bookingsummary</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_city</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_closedby</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_timeclosed</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_country</string>
+    <string>msdyn_workorder.msdyn_workorder.createdby</string>
+    <string>msdyn_workorder.msdyn_workorder.createdon</string>
+    <string>msdyn_workorder.msdyn_workorder.transactioncurrencyid</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_estimatesubtotalamount</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_estimatesubtotalamount_base</string>
+    <string>msdyn_workorder.msdyn_workorder.exchangerate</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_followupnote</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_followuprequired</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_instructions</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_isfollowup</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_ismobile</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_latitude</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_longitude</string>
+    <string>msdyn_workorder.msdyn_workorder.modifiedon</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_parentworkorder</string>
+    <string>msdyn_workorder.msdyn_workorder.ownerid</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_postalcode</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_preferredresource</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_pricelist</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_customerasset</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_primaryincidentdescription</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_primaryincidentestimatedduration</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_primaryincidenttype</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_priority</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_reportedbycontact</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_taxcode</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_serviceaccount</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_name</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_workordertype</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_servicerequest</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_serviceterritory</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_workordersummary</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_stateorprovince</string>
+    <string>msdyn_workorder.msdyn_workorder.statecode</string>
+    <string>msdyn_workorder.msdyn_workorder.statuscode</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_substatus</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_subtotalamount</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_subtotalamount_base</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_systemstatus</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_taxable</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_timefrompromised</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_timetopromised</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_totalamount</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_totalamount_base</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_totalsalestax</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_totalsalestax_base</string>
+    <string>msdyn_workorder.msdyn_workorder.msdyn_workorderid</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>240</Width>
+      <Height>48</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_workorder.msdyn_workorder.msdyn_address1">
+          <IsConstant>false</IsConstant>
+          <StyleName>r_gray</StyleName>
+          <Bounds>105,34,66,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder.msdyn_workorder.msdyn_serviceaccount">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>8,34,96,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder.msdyn_workorder.msdyn_name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>77,0,69,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="starttime">
+          <IsConstant>false</IsConstant>
+          <StyleName>black</StyleName>
+          <Bounds>6,1,73,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="resource">
+          <IsConstant>false</IsConstant>
+          <StyleName>black</StyleName>
+          <Bounds>146,0,78,19</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>9</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="bookingstatus">
+          <IsConstant>false</IsConstant>
+          <StyleName>black_bold</StyleName>
+          <Bounds>8,19,232,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder.msdyn_workorder.msdyn_city">
+          <IsConstant>false</IsConstant>
+          <StyleName>r_gray</StyleName>
+          <Bounds>178,34,50,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>10</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_priority">
+          <IsConstant>false</IsConstant>
+          <StyleName>Map Pins</StyleName>
+          <Bounds>4,4,100,20</Bounds>
+          <CellKind>2</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>48</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

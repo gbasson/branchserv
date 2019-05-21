@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>new_disclaimer</EntityName>
+    <CamelCase>new_disclaimer</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Disclaimers SC#</Name>
+  <Kind>AssociatedList</Kind>
+  <IsDefault>false</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <Fetch version="1.0">
+    <entity name="new_disclaimer" />
+  </Fetch>
+  <OrderBy>new_name</OrderBy>
+  <FilterAllowedFields>new_name;new_servicecall2nd</FilterAllowedFields>
+  <SerializedBindings>
+    <string>createdon</string>
+    <string>new_disclaimerid</string>
+    <string>new_disclaimer</string>
+    <string>modifiedon</string>
+    <string>new_name</string>
+    <string>new_relatedincident</string>
+    <string>new_servicecall2nd</string>
+    <string>new_servicecallnum</string>
+    <string>new_servicecall2nd.msdyn_workorder.msdyn_workordertype</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>260</Width>
+      <Height>44</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="new_name">
+          <IsConstant>false</IsConstant>
+          <StyleName>Emergency Red</StyleName>
+          <Bounds>1,0,259,22</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_servicecall2nd.msdyn_workorder.msdyn_workordertype">
+          <IsConstant>false</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>73,25,186,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="PRODUCT TYPE:">
+          <IsConstant>true</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>3,25,72,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>0</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>msdyn_workorderservice</EntityName>
+  <CamelCase>msdyn_workorderservice</CamelCase>
+  <ClassBinding />
+  <SerializedChildren />
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>General</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="msdyn_service" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_linestatus" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_duration" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_durationtobill" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_unitamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_discountpercent" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_subtotal" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_customerasset" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_pricelist" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Estimate</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="msdyn_estimateduration" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_estimateunitamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_estimatesubtotal" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_estimatediscountpercent" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_estimatediscountamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_estimatetotalamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_estimatecalculatedunitamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_estimateunitcost" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_estimatetotalcost" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Pricing</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="msdyn_unitamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_subtotal" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_discountpercent" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_discountamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_totalamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_minimumchargeduration" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_minimumchargeamount" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem xsi:type="SeparatorDetailItem" image="false" separator="true">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_unitcost" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_additionalcost" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_commissioncosts" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_totalcost" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeader="1" flexiMaxLines="0" FlipMode="0">
+      <Name>Notes List</Name>
+      <LogicalName>annotation.objectid</LogicalName>
+      <Binding SchemaName="annotation.objectid">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeader="1" flexiMaxLines="0" FlipMode="0">
+      <Name>Activity List</Name>
+      <LogicalName>activity.regardingobjectid</LogicalName>
+      <Binding SchemaName="activity.regardingobjectid">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+  </SerializedChildrenV2>
+  <Navigation flexi="0" flexiHeader="1" flexiMaxLines="0">
+    <Name>Navigation</Name>
+    <SerializedChildren />
+  </Navigation>
+  <PrimaryCommands>!defcmd</PrimaryCommands>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+  <SerializedContactInfo />
+</EntityForm>

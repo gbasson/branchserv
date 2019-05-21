@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Columns>1</Columns>
+  <Rows>1</Rows>
+  <Items>
+    <DashboardComponent xsi:type="DashboardEntityComponent" Kind="List" Binding="msdyn_productinventory;msdyn_productinventory.*:msdyn_productinventory.@My Inventory" Options="3">
+      <Bounds>0,0,1,1</Bounds>
+    </DashboardComponent>
+  </Items>
+</Dashboard>

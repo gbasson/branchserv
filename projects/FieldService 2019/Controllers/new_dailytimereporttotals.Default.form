@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>new_dailytimereporttotals</EntityName>
+  <CamelCase>new_dailytimereporttotals</CamelCase>
+  <ClassBinding />
+  <SerializedChildren />
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>General</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="new_name" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="new_totaltime" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="new_workday" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Address</Name>
+      <SerializedChildren />
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeader="1" flexiMaxLines="0" FlipMode="0">
+      <Name>Daily Time Reports List (*)</Name>
+      <LogicalName>new_dailytimereport.@virtual</LogicalName>
+      <Views>&lt;extra&gt;&lt;filter entity="new_dailytimereport"&gt;&amp;lt;fetch version="1.0"&amp;gt;&amp;lt;entity name="new_dailytimereport"&amp;gt;&amp;lt;filter type="and"&amp;gt;&amp;lt;condition attribute="ownerid" operator="eq-userid" /&amp;gt;&amp;lt;/filter&amp;gt;&amp;lt;/entity&amp;gt;&amp;lt;/fetch&amp;gt;&lt;/filter&gt;&lt;/extra&gt;</Views>
+      <Binding SchemaName="new_dailytimereport.@virtual">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+  </SerializedChildrenV2>
+  <Navigation flexi="0" flexiHeader="1" flexiMaxLines="0">
+    <Name>Navigation</Name>
+    <SerializedChildren />
+  </Navigation>
+  <PrimaryCommands>!defcmd</PrimaryCommands>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+  <SerializedContactInfo />
+</EntityForm>

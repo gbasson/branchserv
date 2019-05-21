@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>msdyn_payment</EntityName>
+    <CamelCase>msdyn_payment</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Default</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <OrderBy>msdyn_name</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_account</string>
+    <string>msdyn_amount</string>
+    <string>msdyn_checknumber</string>
+    <string>createdon</string>
+    <string>msdyn_date</string>
+    <string>modifiedon</string>
+    <string>msdyn_name</string>
+    <string>msdyn_paymentid</string>
+    <string>msdyn_paymentmethod</string>
+    <string>msdyn_paymenttype</string>
+    <string>statecode</string>
+    <string>statuscode</string>
+    <string>msdyn_unappliedamount</string>
+    <string>msdyn_unappliedamount_base</string>
+    <string>msdyn_workorder</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>240</Width>
+      <Height>40</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_paymenttype">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,0,129,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_amount">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>129,0,111,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>1</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_date">
+          <IsConstant>false</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>0,20,240,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>0</Height>
+</EntityList>

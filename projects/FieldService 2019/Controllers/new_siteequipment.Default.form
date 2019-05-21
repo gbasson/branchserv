@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" resize="1" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>new_siteequipment</EntityName>
+  <CamelCase>new_siteequipment</CamelCase>
+  <ClassBinding />
+  <SerializedChildren />
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>General</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_equipmenttype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_installationdate" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_warrantyexp" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_warrantytype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_comments" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="1" flexiWidth="1" flexiHeader="1" flexiMaxLines="0">
+      <Name>Equipment_Survey_Status</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_surveycompleteequipmentupdatedoradded" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_surveycompletenochanges" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_equipmentnotonsite" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Access_Control</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_integratedalarmaccess" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_auxpowersupplymake" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_batterycapacity" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_batteries" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_doorpowersupplymodel" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_accessmodulemake" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_accessmodulemodel" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_readers" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_readertype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_doorcontacts" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_rexbuttontotal" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_rexpirtotal" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Advanced_Terminal</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_itmmanufacturer" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_itmmachinetype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_so" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_branchservpo" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_sn" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_cardreadertype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_cardreaderhasantiskim" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_atmswitch" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_cashdeposittype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_checkdeposittype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_coindispense" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_cashdispensertype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_network" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_softwareversion" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Alarm</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_alarmcontrolversion" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_keypadmodel" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_keypads" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_wirelessreceivermake" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_wirelessreceivermodel" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_wirelessrepeatermake" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_wirelessrepeatermodel" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_cellularbackupmake" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_cellularbackupmodel" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_motiondetectorswired" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_motiondetectorswireless" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_doorcontactswired" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_doorcontactswireless" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_holdupactivatorswired" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_holdupactivatorswireless" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_vaultsafedoorcontacts" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_vaultsafeheatdetector" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_vaultsafeseismicoraudio" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_connectiontonightdepositprotection" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_connectiontoatmitmprotection" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_connectiontocashrecyclerprotection" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_connectiontofirealarm" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_zoneexpanders" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_modelofzoneexpanders" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_auxiliarypowersupplies" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_accesscontrolledbyalarm" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>ATM</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_atmmanufacturer" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_atmmachinetype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_so" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_branchservpo" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_sn" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_cardreadertype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_cardreaderhasantiskim" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_cashdeposittype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_cashdispensertype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_coindispense" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_network" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_softwareversion" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Cash_Dispenser</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_endoflife" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_sn" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Currency_Counter</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_sn" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_endoflife" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>DriveUp_Audio_Video</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_tellerconsoles" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_customerunits" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_wirelessheadsets" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_communication" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>DriveUp_Drawer</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_electricmanual" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>DVR</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_sn" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_encodermake" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_encodermodel" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>IP_Lockbox</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_sn" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_endoflife" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Locker</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="new_qty" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_electroniclocks" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_mechanicallocks" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_keylocks" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Night_Depository</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_letterbagboth" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_chestmanufacturer" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_endoflife" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Point_to_Point</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_updown" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_lanenumber" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_endoflife" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Remote_DriveUp</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_updown" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_lanenumber" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_endoflife" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Safe</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_rating" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_sn" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_lock" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_timelock" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_lockers" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_safedepositboxes" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_endoflife" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Safe_Deposit</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="new_qty" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>SafePak</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_sn" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_nd3" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_nd4" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_nd6" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Security_Portal</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_sn" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_endoflife" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Smart_Safe</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_sn" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_dataplan" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_endoflife" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>TCR</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_tcrmanufacturer" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_tcrmachinetype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_so" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_branchservpo" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_sn" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_firmwareversion" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_locktype" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_hostinterfacesw" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_clientlicensesifbranchware" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_branchwaretablet" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_externalprinterattached" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_modelofexternalprinter" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_coindispenserattached" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_typeofcoinunit" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_coindispenserdualorsingle" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Undercounter_Teller_Line</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_pedestalswelectroniccombo" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_pedestalswcombodial" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_pedestalswkeylock" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Vault</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_brand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_ratingthickness" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_doorbrand" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_model" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_ratingthickness" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="new_qty" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_hydraulicdoor" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_condition" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_endoflife" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Video</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_powersupply" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_poeswitchinjectormodel" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_atmcapturemodel" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_atmtransactioncapture" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_analogcameras" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_ipcameras" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_monitors" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+  </SerializedChildrenV2>
+  <Navigation flexi="0" flexiHeader="1" flexiMaxLines="0">
+    <Name>Navigation</Name>
+    <SerializedChildren />
+  </Navigation>
+  <WorkflowLoad>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="7" version="0"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Access_Control.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Entity.new_name&lt;/var&gt;&lt;arg&gt;String:.&lt;/arg&gt;&lt;func&gt;AddSufix&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Advanced_Terminal.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Alarm.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.ATM.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Cash_Dispenser.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Currency_Counter.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DriveUp_Audio_Video.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DriveUp_Drawer.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DVR.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.IP_Lockbox.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.Locker.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.Night_Depository.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.Point_to_Point.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.Remote_DriveUp.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.Safe.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.Safe_Deposit.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.SafePak.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.Security_Portal.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.Smart_Safe.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.TCR.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.Undercounter_Teller_Line.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.Vault.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="true"&gt;&lt;var&gt;Tabs.Video.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;branch e="true"&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800005&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Access_Control.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800006&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Advanced_Terminal.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800007&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Alarm.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800008&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.ATM.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800002&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Cash_Dispenser.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800001&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Currency_Counter.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800010&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DriveUp_Audio_Video.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800009&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DriveUp_Drawer.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800011&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DVR.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800012&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.IP_Lockbox.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800013&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Locker.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800014&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Night_Depository.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800015&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Point_to_Point.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800016&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Remote_DriveUp.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800000&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800004&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe_Deposit.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800018&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.SafePak.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800017&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Security_Portal.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800019&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Smart_Safe.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800020&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.TCR.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800021&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Undercounter_Teller_Line.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800003&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Vault.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800022&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Video.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</WorkflowLoad>
+  <WorkflowItemChanged>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="7" version="0"&gt;&lt;branch e="true"&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800005&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Access_Control.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800006&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Advanced_Terminal.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800007&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Alarm.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800008&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.ATM.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800002&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Cash_Dispenser.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800001&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Currency_Counter.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800010&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DriveUp_Audio_Video.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800009&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DriveUp_Drawer.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800011&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DVR.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800012&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.IP_Lockbox.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800013&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Locker.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800014&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Night_Depository.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800015&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Point_to_Point.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800016&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Remote_DriveUp.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800000&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800004&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe_Deposit.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800018&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.SafePak.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800017&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Security_Portal.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800019&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Smart_Safe.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800020&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.TCR.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800021&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Undercounter_Teller_Line.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800003&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Vault.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmenttype&lt;/var&gt;&lt;arg&gt;Picklist:858800022&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Video.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</WorkflowItemChanged>
+  <WorkflowSave>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="7" version="0"&gt;&lt;branch info="reminder to set survey status" e="true"&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;group e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_surveycompleteequipmentupdatedoradded&lt;/var&gt;&lt;arg&gt;Boolean:1&lt;/arg&gt;&lt;op&gt;NotEqual&lt;/op&gt;&lt;/condition&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_equipmentnotonsite&lt;/var&gt;&lt;arg&gt;Boolean:1&lt;/arg&gt;&lt;op&gt;NotEqual&lt;/op&gt;&lt;/condition&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_surveycompletenochanges&lt;/var&gt;&lt;arg&gt;Boolean:1&lt;/arg&gt;&lt;op&gt;NotEqual&lt;/op&gt;&lt;/condition&gt;&lt;/group&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;WarningMessage&lt;/var&gt;&lt;arg&gt;String:** Don't forget to set one of the Equipment Survey Status!  Select No to continue editing.&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</WorkflowSave>
+  <SharedVariables>&lt;SharedVariables&gt;&lt;Variables /&gt;&lt;/SharedVariables&gt;</SharedVariables>
+  <SharedVariableNames />
+  <PrimaryCommands>!defcmd</PrimaryCommands>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+  <SerializedContactInfo />
+</EntityForm>

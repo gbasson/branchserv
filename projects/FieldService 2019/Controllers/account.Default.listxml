@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>account</EntityName>
+    <VisualStudioProjectId>c0f71827-e4f6-464e-a71d-c36687d5738e</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Default</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <Fetch version="1.0">
+    <entity name="account">
+      <filter type="and">
+        <condition attribute="statecode" operator="eq" value="0" />
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="accountnumber" method="Contains" />
+    <attribute schema="address1_city" method="Contains" />
+    <attribute schema="address1_composite" method="Contains" />
+    <attribute schema="address1_country" method="Contains" />
+    <attribute schema="address1_county" method="Contains" />
+    <attribute schema="address1_line1" method="Contains" />
+    <attribute schema="address1_postalcode" method="Contains" />
+    <attribute schema="address1_stateorprovince" method="Contains" />
+    <attribute schema="emailaddress1" method="Contains" />
+    <attribute schema="msdyn_billingaccount" method="Contains" reference="true" />
+    <attribute schema="msdyn_serviceterritory" method="Contains" reference="true" />
+    <attribute schema="name" method="Contains" />
+  </Search>
+  <OrderBy>name</OrderBy>
+  <FilterAllowedFields>accountnumber;address1_composite;address1_city;address1_country;address1_county;address1_addressid;address1_primarycontactname;address1_stateorprovince;address1_line1;address1_postalcode;msdyn_billingaccount;emailaddress1;fax;name;openrevenue;msdyn_serviceterritory</FilterAllowedFields>
+  <SerializedBindings>
+    <string>accountid</string>
+    <string>address1_city</string>
+    <string>address1_stateorprovince</string>
+    <string>address1_line1</string>
+    <string>address1_postalcode</string>
+    <string>emailaddress1</string>
+    <string>name</string>
+    <string>telephone1</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>300</Width>
+      <Height>50</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>33,0,267,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>9</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="address1_line1">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>0,29,103,21</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="address1_postalcode">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>170,29,64,21</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>12</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="address1_city">
+          <IsConstant>false</IsConstant>
+          <StyleName>r_gray</StyleName>
+          <Bounds>104,29,66,21</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>8</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="address1_stateorprovince">
+          <IsConstant>false</IsConstant>
+          <StyleName>r_gray</StyleName>
+          <Bounds>233,29,67,21</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>New Template</Name>
+      <Width>240</Width>
+      <Height>50</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>8,1,205,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>15</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="address1_line1">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>8,18,164,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="address1_city">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>8,34,150,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>11</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="address1_stateorprovince">
+          <IsConstant>false</IsConstant>
+          <StyleName>r_gray</StyleName>
+          <Bounds>167,34,71,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>8</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="address1_postalcode">
+          <IsConstant>false</IsConstant>
+          <StyleName>r_gray</StyleName>
+          <Bounds>172,18,65,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>40</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

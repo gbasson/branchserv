@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>new_requestforparts</EntityName>
+    <CamelCase>new_requestforparts</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>My Requests for Parts</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <Fetch version="1.0">
+    <entity name="new_requestforparts">
+      <filter type="and">
+        <condition attribute="createdon" operator="last-x-days" value="60" />
+        <filter type="or">
+          <condition attribute="new_technameuser" operator="eq-userid" />
+          <condition attribute="createdby" operator="eq-userid" />
+        </filter>
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="new_name" method="Contains" />
+    <attribute schema="new_productidnumber" method="Contains" />
+    <attribute schema="new_vendorname" method="Contains" />
+  </Search>
+  <OrderBy>!createdon</OrderBy>
+  <SerializedBindings>
+    <string>createdon</string>
+    <string>new_dateordered</string>
+    <string>new_datepromised</string>
+    <string>new_dateshipped</string>
+    <string>new_deliveryoptions</string>
+    <string>new_productid</string>
+    <string>new_description</string>
+    <string>modifiedon</string>
+    <string>ownerid</string>
+    <string>new_productidnumber</string>
+    <string>new_qty</string>
+    <string>new_name</string>
+    <string>new_requestforpartsid</string>
+    <string>new_requeststatus</string>
+    <string>new_servicecall</string>
+    <string>new_shiptolocations</string>
+    <string>new_trackingnum</string>
+    <string>new_vendorname</string>
+    <string>new_warehousenum</string>
+    <string>new_productid.product.sbs_vendoritemno</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>320</Width>
+      <Height>88</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="Qty:">
+          <IsConstant>true</IsConstant>
+          <StyleName>gray9</StyleName>
+          <Bounds>3,13,27,14</Bounds>
+          <CellKind>0</CellKind>
+          <IsFormatted>false</IsFormatted>
+          <Anchor>4</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_productid.product.sbs_vendoritemno">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray9</StyleName>
+          <Bounds>129,29,56,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Vendor:">
+          <IsConstant>true</IsConstant>
+          <StyleName>gray9</StyleName>
+          <Bounds>2,28,40,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Product ID:">
+          <IsConstant>true</IsConstant>
+          <StyleName>gray9</StyleName>
+          <Bounds>69,13,57,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Ship To:">
+          <IsConstant>true</IsConstant>
+          <StyleName>gray9</StyleName>
+          <Bounds>3,45,39,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Ordered:">
+          <IsConstant>true</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>189,14,40,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Promised:">
+          <IsConstant>true</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>189,29,41,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>15</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Shipped:">
+          <IsConstant>true</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>189,44,41,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>15</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Tracking#:">
+          <IsConstant>true</IsConstant>
+          <StyleName>gray9</StyleName>
+          <Bounds>2,72,52,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_qty">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray9</StyleName>
+          <Bounds>32,13,33,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_productidnumber">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray9</StyleName>
+          <Bounds>128,14,59,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_dateordered">
+          <IsConstant>false</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>230,14,60,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>0</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_datepromised">
+          <IsConstant>false</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>229,29,60,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_dateshipped">
+          <IsConstant>false</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>231,44,60,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>1</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_vendorname">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray9</StyleName>
+          <Bounds>43,28,85,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_shiptolocations">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray9</StyleName>
+          <Bounds>43,44,36,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_trackingnum">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray9</StyleName>
+          <Bounds>55,73,136,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_deliveryoptions">
+          <IsConstant>false</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>117,45,58,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Method:">
+          <IsConstant>true</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>80,44,37,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>7</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Warehouse: ">
+          <IsConstant>true</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>3,59,58,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_warehousenum">
+          <IsConstant>false</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>59,60,83,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="SERVICE CALL #:">
+          <IsConstant>true</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>2,0,86,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_servicecall">
+          <IsConstant>false</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>93,0,86,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_requeststatus">
+          <IsConstant>false</IsConstant>
+          <StyleName>small red</StyleName>
+          <Bounds>190,58,100,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>0</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

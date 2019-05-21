@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>msdyn_timeoffrequest</EntityName>
+    <CamelCase>msdyn_timeoffrequest</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Time Off Requests</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>!msdyn_starttime</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_approvedby</string>
+    <string>createdon</string>
+    <string>new_desc</string>
+    <string>msdyn_duration</string>
+    <string>msdyn_endtime</string>
+    <string>modifiedon</string>
+    <string>msdyn_name</string>
+    <string>ownerid</string>
+    <string>owningbusinessunit</string>
+    <string>owningteam</string>
+    <string>owninguser</string>
+    <string>msdyn_resource</string>
+    <string>msdyn_starttime</string>
+    <string>statecode</string>
+    <string>statuscode</string>
+    <string>msdyn_timeoffrequestid</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>350</Width>
+      <Height>75</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,0,186,24</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_starttime">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>0,49,161,25</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>7</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_endtime">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray</StyleName>
+          <Bounds>189,49,161,26</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>15</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_desc">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,26,350,23</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>0</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

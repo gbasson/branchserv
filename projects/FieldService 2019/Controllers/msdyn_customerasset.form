@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>msdyn_customerasset</EntityName>
+  <CamelCase>msdyn_customerasset</CamelCase>
+  <ClassBinding />
+  <SerializedChildren />
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>General</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="msdyn_product" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_account" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_parentasset" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeader="1" flexiMaxLines="0" FlipMode="0">
+      <Name>Work Order Incidents List</Name>
+      <LogicalName>msdyn_workorderincident.msdyn_customerasset</LogicalName>
+      <Views>msdyn_workorderincident.*:msdyn_workorderincident.@Asset Service History</Views>
+      <Binding SchemaName="msdyn_workorderincident.msdyn_customerasset">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeader="1" flexiMaxLines="0" FlipMode="0">
+      <Name>Notes List</Name>
+      <LogicalName>annotation.objectid</LogicalName>
+      <Binding SchemaName="annotation.objectid">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexi="1" flexiHeader="1" flexiMaxLines="0" FlipMode="0">
+      <Name>Activity List</Name>
+      <LogicalName>activity.regardingobjectid</LogicalName>
+      <Binding SchemaName="activity.regardingobjectid">
+        <IsConstant>false</IsConstant>
+      </Binding>
+    </FormTab>
+  </SerializedChildrenV2>
+  <Navigation flexi="0" flexiHeader="1" flexiMaxLines="0">
+    <Name>Navigation</Name>
+    <SerializedChildren />
+  </Navigation>
+  <PrimaryCommands>!defcmd</PrimaryCommands>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+  <SerializedContactInfo />
+</EntityForm>

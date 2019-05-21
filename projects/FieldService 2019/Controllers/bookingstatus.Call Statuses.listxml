@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>bookingstatus</EntityName>
+    <CamelCase>BookingStatus</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Call Statuses</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <Fetch version="1.0">
+    <entity name="bookingstatus">
+      <filter type="and">
+        <condition attribute="statecode" operator="eq" value="0" />
+        <condition attribute="new_team" operator="eq" value="a9b6e041-02b5-e611-80f3-5065f38be0e1" uitype="team" uiname="Technician" />
+      </filter>
+    </entity>
+  </Fetch>
+  <OrderBy>new_order</OrderBy>
+  <SerializedBindings>
+    <string>bookingstatusid</string>
+    <string>createdon</string>
+    <string>msdyn_fieldservicestatus</string>
+    <string>modifiedon</string>
+    <string>name</string>
+    <string>new_order</string>
+    <string>ownerid</string>
+    <string>status</string>
+    <string>statecode</string>
+    <string>statuscode</string>
+    <string>new_team</string>
+    <string>description</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>240</Width>
+      <Height>29</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="name">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,2,227,24</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>0</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>
