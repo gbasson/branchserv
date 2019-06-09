@@ -1,0 +1,41 @@
+﻿<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:dummy="0" flexi="0" fleximode="1" fullscreen="0" resize="0" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>msdyn_workorderincident</EntityName>
+  <CamelCase>msdyn_workorderincident</CamelCase>
+  <PrimaryCommands>!defcmd</PrimaryCommands>
+  <ClassBinding/>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab">
+      <Name>General</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="msdyn_incidenttype"/>
+        <DetailItem SchemaName="msdyn_workorder"/>
+        <DetailItem SchemaName="msdyn_description" Style="Multiline_left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab" flexiHeight="5" DocCommands="0" FlipMode="240" ListCommands="132">
+      <Name>Inspection Checklist</Name>
+      <CustomName>Inspection Checklist</CustomName>
+      <Binding SchemaName="msdyn_workorderservicetask.msdyn_workorderincident"/>
+      <Views>msdyn_workorderservicetask.DetailedServiceTaskList - Site Survey</Views>
+    </FormTab>
+    <FormTab xsi:type="IFrameTab" flexiHeader="0">
+      <Name>NoAssets</Name>
+      <Url>file://Branchserv/create_siteasset.html</Url>
+      <DelayLoad>false</DelayLoad>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab">
+      <Name>Additional Notes</Name>
+      <CustomName>Additional Notes</CustomName>
+      <Binding SchemaName="annotation.objectid"/>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab">
+      <Name>Activity List</Name>
+      <Binding SchemaName="activity.regardingobjectid"/>
+    </FormTab>
+  </SerializedChildrenV2>
+</EntityForm>

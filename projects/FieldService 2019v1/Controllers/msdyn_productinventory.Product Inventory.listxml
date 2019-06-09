@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Attributes>
+    <EntityName>msdyn_productinventory</EntityName>
+    <CamelCase>msdyn_productinventory</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding />
+  </Attributes>
+  <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
+  <Name>Product Inventory</Name>
+  <Kind>List</Kind>
+  <IsDefault>false</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <Search>
+    <attribute schema="msdyn_name" method="Contains" />
+    <attribute schema="msdyn_product" method="Contains" reference="true" />
+    <attribute schema="msdyn_warehouse" method="Contains" reference="true" />
+    <attribute schema="new_nav" method="Contains" />
+  </Search>
+  <OrderBy>msdyn_product</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_bin</string>
+    <string>createdon</string>
+    <string>modifiedon</string>
+    <string>msdyn_name</string>
+    <string>msdyn_product</string>
+    <string>msdyn_productinventoryid</string>
+    <string>msdyn_qtyallocated</string>
+    <string>msdyn_qtyavailable</string>
+    <string>msdyn_qtyonhand</string>
+    <string>msdyn_qtyonorder</string>
+    <string>msdyn_reorderpoint</string>
+    <string>msdyn_row</string>
+    <string>msdyn_unit</string>
+    <string>msdyn_warehouse</string>
+  </SerializedBindings>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>240</Width>
+      <Height>40</Height>
+      <SerializedBackground>0</SerializedBackground>
+      <SerializedSelectedBackground>0</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_product">
+          <IsConstant>false</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>8,2,137,24</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_row">
+          <IsConstant>false</IsConstant>
+          <StyleName>r_gray</StyleName>
+          <Bounds>155,24,34,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>8</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_bin">
+          <IsConstant>false</IsConstant>
+          <StyleName>r_gray</StyleName>
+          <Bounds>189,25,28,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>8</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_qtyavailable">
+          <IsConstant>false</IsConstant>
+          <StyleName>Primary_right</StyleName>
+          <Bounds>155,1,63,24</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>9</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_warehouse">
+          <IsConstant>false</IsConstant>
+          <StyleName>gray_bold</StyleName>
+          <Bounds>9,26,84,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties />
+  <SerializedChildren />
+  <Height>0</Height>
+  <IFrameProvidesDS>false</IFrameProvidesDS>
+</EntityList>

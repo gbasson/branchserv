@@ -1,0 +1,152 @@
+﻿<EntityList>
+  <Attributes>
+    <EntityName>product</EntityName>
+    <CamelCase>Product</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding/>
+  </Attributes>
+  <Name>Field Service Inventory Products</Name>
+  <Kind>LookupList</Kind>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>name</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_converttocustomerasset</string>
+    <string>createdby</string>
+    <string>createdonbehalfby</string>
+    <string>createdbyexternalparty</string>
+    <string>createdon</string>
+    <string>transactioncurrencyid</string>
+    <string>currentcost</string>
+    <string>currentcost_base</string>
+    <string>quantitydecimal</string>
+    <string>pricelevelid</string>
+    <string>defaultuomid</string>
+    <string>msdyn_defaultvendor</string>
+    <string>description</string>
+    <string>entityimageid</string>
+    <string>exchangerate</string>
+    <string>msdyn_fieldserviceproducttype</string>
+    <string>hierarchypath</string>
+    <string>iskit</string>
+    <string>price</string>
+    <string>price_base</string>
+    <string>modifiedby</string>
+    <string>modifiedonbehalfby</string>
+    <string>modifiedbyexternalparty</string>
+    <string>modifiedon</string>
+    <string>name</string>
+    <string>new_nav</string>
+    <string>organizationid</string>
+    <string>parentproductid</string>
+    <string>processid</string>
+    <string>stageid</string>
+    <string>productid</string>
+    <string>productnumber</string>
+    <string>producttypecode</string>
+    <string>msdyn_purchasename</string>
+    <string>quantityonhand</string>
+    <string>overriddencreatedon</string>
+    <string>size</string>
+    <string>standardcost</string>
+    <string>standardcost_base</string>
+    <string>statecode</string>
+    <string>statuscode</string>
+    <string>isstockitem</string>
+    <string>stockvolume</string>
+    <string>stockweight</string>
+    <string>subjectid</string>
+    <string>suppliername</string>
+    <string>msdyn_taxable</string>
+    <string>timezoneruleversionnumber</string>
+    <string>traversedpath</string>
+    <string>defaultuomscheduleid</string>
+    <string>msdyn_upccode</string>
+    <string>producturl</string>
+    <string>utcconversiontimezonecode</string>
+    <string>validfromdate</string>
+    <string>validtodate</string>
+    <string>vendorid</string>
+    <string>sbs_vendoritemno</string>
+    <string>vendorpartnumber</string>
+    <string>vendorname</string>
+    <string>versionnumber</string>
+  </SerializedBindings>
+  <MaxColumns>0</MaxColumns>
+  <Fetch version="1.0">
+    <entity name="product">
+      <filter type="and">
+        <condition attribute="statecode" operator="in">
+          <value>0</value>
+          <value>1</value>
+          <value>3</value>
+        </condition>
+        <condition attribute="msdyn_fieldserviceproducttype" operator="in">
+          <value>690970000</value>
+          <value>690970001</value>
+        </condition>
+        <condition attribute="new_blockedname" operator="not-like" value="%yes%"/>
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="description" method="Contains"/>
+    <attribute schema="msdyn_defaultvendor" method="Contains" reference="true"/>
+    <attribute schema="msdyn_fieldserviceproducttype" method="Contains" reference="true"/>
+    <attribute schema="msdyn_purchasename" method="Contains"/>
+    <attribute schema="name" method="Contains"/>
+    <attribute schema="productnumber" method="Contains"/>
+    <attribute schema="producttypecode" method="Contains" reference="true"/>
+    <attribute schema="sbs_vendoritemno" method="Contains"/>
+    <attribute schema="statuscode" method="Contains" reference="true"/>
+    <attribute schema="vendorid" method="Contains"/>
+  </Search>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>240</Width>
+      <Height>65</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="name">
+          <StyleName>primary</StyleName>
+          <Bounds>0,0,240,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="price">
+          <StyleName>r_gray</StyleName>
+          <Bounds>166,17,72,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>9</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="productnumber">
+          <StyleName>New Green</StyleName>
+          <Bounds>1,17,111,16</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="sbs_vendoritemno">
+          <StyleName>date</StyleName>
+          <Bounds>66,33,124,17</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>1</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="description">
+          <StyleName>date</StyleName>
+          <Bounds>0,50,238,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Vendor Item#:">
+          <IsConstant>true</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>0,33,66,17</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties/>
+</EntityList>

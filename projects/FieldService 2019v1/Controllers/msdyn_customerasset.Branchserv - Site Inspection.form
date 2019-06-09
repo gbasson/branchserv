@@ -1,0 +1,445 @@
+﻿<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:dummy="0" flexi="1" fleximode="1" fullscreen="0" resize="0" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>msdyn_customerasset</EntityName>
+  <CamelCase>msdyn_customerasset</CamelCase>
+  <WorkflowLoad>&lt;?xml version="1.0" ?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="11" version="0"&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Access Control.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Advanced Terminal.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Alarm.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.ATM.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Cash Dispenser.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Currency Counter.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Drive Up Audio / Video.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Drive Up Drawer.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DVR.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.IP Lock Box.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Locker.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Night Depository.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Point to Point.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Remote Drive Up.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe Deposit.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.SafePak.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Security Portal.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Smart Safe.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.TCR.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Undercounter - Teller Line.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Vault.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Video.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;branch e="true" info="Check Asset Type" &gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,3c748a7c-f17c-e911-a95b-000d3a34e313,Access Control&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Access Control.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_brand.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Brand&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_brand.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Model&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,3e748a7c-f17c-e911-a95b-000d3a34e313,Advanced Terminal&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Advanced Terminal.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,40748a7c-f17c-e911-a95b-000d3a34e313,Alarm&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Alarm.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,42748a7c-f17c-e911-a95b-000d3a34e313,ATM&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.ATM.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,44748a7c-f17c-e911-a95b-000d3a34e313,Cash Dispenser&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Cash Dispenser.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,46748a7c-f17c-e911-a95b-000d3a34e313,Currency Counter&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Currency Counter.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,48748a7c-f17c-e911-a95b-000d3a34e313,Drive-up Audio / Video&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Drive Up Audio / Video.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,4a748a7c-f17c-e911-a95b-000d3a34e313,Drive-up Drawer&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Drive Up Drawer.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,4c748a7c-f17c-e911-a95b-000d3a34e313,DVR&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DVR.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_model.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:DVR Model&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:DVR S/N&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,4e748a7c-f17c-e911-a95b-000d3a34e313,IP Lockbox&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.IP Lock Box.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,50748a7c-f17c-e911-a95b-000d3a34e313,Locker&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Locker.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_qty.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:# Openings&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,52748a7c-f17c-e911-a95b-000d3a34e313,Night Depository&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Night Depository.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_brand.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Head Brand&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_model.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Head Model&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,54748a7c-f17c-e911-a95b-000d3a34e313,Point to Point&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Point to Point.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,56748a7c-f17c-e911-a95b-000d3a34e313,Remote Drive-up&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Remote Drive Up.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,58748a7c-f17c-e911-a95b-000d3a34e313,Safe&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,5a748a7c-f17c-e911-a95b-000d3a34e313,Safe Deposit&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe Deposit.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_qty.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:# Openings&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,5c748a7c-f17c-e911-a95b-000d3a34e313,SafePak&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.SafePak.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:S/N (Bag ID#)&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,5e748a7c-f17c-e911-a95b-000d3a34e313,Security Portal&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Security Portal.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,60748a7c-f17c-e911-a95b-000d3a34e313,Smart Safe&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Smart Safe.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,62748a7c-f17c-e911-a95b-000d3a34e313,TCR&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.TCR.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,64748a7c-f17c-e911-a95b-000d3a34e313,Undercounter - Teller Line&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Undercounter - Teller Line.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,66748a7c-f17c-e911-a95b-000d3a34e313,Vault&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Vault.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_brand.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Vault Brand&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_model.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Door Model&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_qty.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Time lock Qty&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,68748a7c-f17c-e911-a95b-000d3a34e313,Video&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Video.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</WorkflowLoad>
+  <WorkflowItemChanged>&lt;?xml version="1.0" ?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="11" version="0"&gt;&lt;branch e="true" info="If Change Item = Asset Category" &gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;ChangedItem&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;String:msdyn_customerassetcategory&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Access Control.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Advanced Terminal.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Alarm.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.ATM.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Cash Dispenser.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Currency Counter.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Drive Up Audio / Video.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Drive Up Drawer.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DVR.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.IP Lock Box.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Locker.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Night Depository.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Point to Point.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Remote Drive Up.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe Deposit.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.SafePak.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Security Portal.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Smart Safe.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.TCR.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Undercounter - Teller Line.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Vault.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Video.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_brand.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Brand&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_model.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Model&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:S/N&lt;/arg&gt;&lt;/function&gt;&lt;branch e="true" info="Check Asset Type" &gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,3c748a7c-f17c-e911-a95b-000d3a34e313,Access Control&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Access Control.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,3e748a7c-f17c-e911-a95b-000d3a34e313,Advanced Terminal&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Advanced Terminal.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,40748a7c-f17c-e911-a95b-000d3a34e313,Alarm&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Alarm.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,42748a7c-f17c-e911-a95b-000d3a34e313,ATM&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.ATM.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,44748a7c-f17c-e911-a95b-000d3a34e313,Cash Dispenser&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Cash Dispenser.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,46748a7c-f17c-e911-a95b-000d3a34e313,Currency Counter&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Currency Counter.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,48748a7c-f17c-e911-a95b-000d3a34e313,Drive-up Audio / Video&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Drive Up Audio / Video.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,4a748a7c-f17c-e911-a95b-000d3a34e313,Drive-up Drawer&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Drive Up Drawer.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,4c748a7c-f17c-e911-a95b-000d3a34e313,DVR&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.DVR.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_model.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:DVR Model&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:DVR S/N&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,4e748a7c-f17c-e911-a95b-000d3a34e313,IP Lockbox&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.IP Lock Box.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:S/N&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,50748a7c-f17c-e911-a95b-000d3a34e313,Locker&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Locker.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_qty.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:# Openings&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,52748a7c-f17c-e911-a95b-000d3a34e313,Night Depository&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Night Depository.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_brand.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Head Brand&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_model.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Head Model&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,54748a7c-f17c-e911-a95b-000d3a34e313,Point to Point&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Point to Point.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,56748a7c-f17c-e911-a95b-000d3a34e313,Remote Drive-up&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Remote Drive Up.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,58748a7c-f17c-e911-a95b-000d3a34e313,Safe&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:S/N&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,5a748a7c-f17c-e911-a95b-000d3a34e313,Safe Deposit&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Safe Deposit.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_qty.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:# Openings&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,5c748a7c-f17c-e911-a95b-000d3a34e313,SafePak&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.SafePak.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:S/N (Bag ID#)&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,5e748a7c-f17c-e911-a95b-000d3a34e313,Security Portal&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Security Portal.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,60748a7c-f17c-e911-a95b-000d3a34e313,Smart Safe&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Smart Safe.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,62748a7c-f17c-e911-a95b-000d3a34e313,TCR&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.TCR.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,64748a7c-f17c-e911-a95b-000d3a34e313,Undercounter - Teller Line&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Undercounter - Teller Line.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,66748a7c-f17c-e911-a95b-000d3a34e313,Vault&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Vault.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_brand.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Vault Brand&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_model.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Door Model&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_qty.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Time lock Qty&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.vel_sn.Label&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:Asset Tag&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,68748a7c-f17c-e911-a95b-000d3a34e313,Video&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Tabs.Video.IsVisible&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Boolean:True&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</WorkflowItemChanged>
+  <SharedVariables>&lt;SharedVariables&gt;&lt;Variables&gt;&lt;/Variables&gt;&lt;/SharedVariables&gt;</SharedVariables>
+  <PrimaryCommands>!defcmd</PrimaryCommands>
+  <SharedVariableNames/>
+  <ClassBinding/>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>General</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="msdyn_customerassetcategory" Style="Normal_Left"/>
+        <DetailItem SchemaName="msdyn_account" Style="Normal_Left"/>
+        <DetailItem SchemaName="msdyn_parentasset" Style="Normal_Left"/>
+        <DetailItem SchemaName="msdyn_product" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Access Control</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_integratedalarmaccess" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_auxpowersupplymake" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_batterycapacity" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_batteries" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_doorpowersupplymodel" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_accessmodulemake" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_accessmodulemodel" Style="Normal_TitleAbove"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_readers" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_readertype" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_doorcontacts" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_rexbuttontotal" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_rexpirtotal" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Advanced Terminal</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_itmmanufacturer" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_tmmachinetype" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_so" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_branchservpo" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_cardreadertype" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_cardreaderhasantiskim" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_atmswitch" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_cashdeposittype" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_checkdeposittype" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_coindispense" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_cashdispensertype" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_network" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_softwareversion" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Alarm</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_alarmcontrolversion" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_keypadmodel" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_keypads" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem" Style="Normal_Line">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_wirelessreceivermake" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_wirelessreceivermodel" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_wirelessrepeatermake" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_wirelessrepeatermodel" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_cellularbackupmodel" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_cellularbackupmake" Style="Normal_TitleAbove"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_motiondetectorswired" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_motiondetectorswireless" Style="Normal_Left_MaxLabel"/>
+        <DetailItem SchemaName="vel_doorcontactswired" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_doorcontactswireless" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_holdupactivatorswired" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_holdupactivatorswireless" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_vaultsafedoorcontacts" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_vaultsafeheatdetector" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_vaultsafeseismicoraudio" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_connectiontonightdepositprotection" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_connectiontoatmitmprotection" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_connectiontocashrecyclerprotection" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_connectiontofirealarm" Style="Normal_TitleAbove"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_zoneexpanders" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_modelofzoneexpanders" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_auxiliarypowersupplies" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>ATM</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_atmmanufacturer" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_atmmachinetype" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_so" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_branchservpo" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_cardreadertype" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_cardreaderhasantiskim" Style="Normal_TitleAbove"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_cashdeposittype" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_checkdeposittype" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_coindispense" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_cashdispensertype" Style="Normal_TitleAbove"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_network" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_softwareversion" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Currency Counter</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_endoflife" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Cash Dispenser</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_endoflife" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Drive Up Audio / Video</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_tellerconsoles" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_customerunits" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_wirelessheadsets" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_communication" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Drive Up Drawer</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_electricmanual" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>DVR</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_encodermake" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_encodermodel" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>IP Lock Box</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_endoflife" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Locker</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_qty" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_electroniclocks" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_mechanicallocks" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_keylocks" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Night Depository</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_letterbagboth" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_chestmanufacturer" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_endoflife" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Point to Point</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_updown" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_lanenumber" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_endoflife" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Remote Drive Up</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_updown" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_lanenumber" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_endoflife" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Safe</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_rating" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_lock" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_timelock" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_lockers" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_safedepositboxes" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_endoflife" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Safe Deposit</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_qty" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>SafePak</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_nd3" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_nd4" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_nd6" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Security Portal</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_endoflife" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Smart Safe</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_dataplan" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_endoflife" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>TCR</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_tcrmanufacturer" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_tcrmachinetype" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_so" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_branchservpo" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_firmwareversion" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_locktype" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_hostinterfacesw" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_clientlicensesifbranchware" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_branchwaretablet" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_externalprinterattached" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_modelofexternalprinter" Style="Normal_TitleAbove"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_coindispenserattached" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_typeofcoinunit" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_coindispenserdualorsingle" Style="Normal_TitleAbove"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Undercounter - Teller Line</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_pedestalswelectroniccombo" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_pedestalswcombodial" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_pedestalswkeylock" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Vault</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_brand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_rating" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_doorbrand" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_model" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_ratingthickness" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_qty" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_hydraulicdoor" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_condition" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_endoflife" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexiWidth="1">
+      <Name>Video</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="vel_sn" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_powersupply" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_poeswitchinjectormodel" Style="Normal_TitleAbove"/>
+        <DetailItem SchemaName="vel_atmcapturemodel" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_atmtransactioncapture" Style="Normal_Left"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="vel_analogcameras" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_ipcameras" Style="Normal_Left"/>
+        <DetailItem SchemaName="vel_monitors" Style="Normal_Left"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab">
+      <Name>Service Call Incidents List</Name>
+      <Binding SchemaName="msdyn_workorderincident.msdyn_customerasset"/>
+      <Views>msdyn_workorderincident.*:msdyn_workorderincident.@Asset Service History</Views>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab">
+      <Name>Notes List</Name>
+      <Binding SchemaName="annotation.objectid"/>
+    </FormTab>
+    <FormTab xsi:type="AssociatedTab">
+      <Name>Activity List</Name>
+      <Binding SchemaName="activity.regardingobjectid"/>
+    </FormTab>
+  </SerializedChildrenV2>
+</EntityForm>

@@ -1,0 +1,115 @@
+﻿<EntityList>
+  <Attributes>
+    <EntityName>msdyn_rma</EntityName>
+    <CamelCase>msdyn_rma</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding/>
+  </Attributes>
+  <Name>My RMAs</Name>
+  <Kind>List</Kind>
+  <IsDefault>true</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>!createdon</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_approvedby</string>
+    <string>createdon</string>
+    <string>msdyn_daterequested</string>
+    <string>msdyn_description</string>
+    <string>modifiedon</string>
+    <string>sbs_navno</string>
+    <string>ownerid</string>
+    <string>msdyn_requestedbycontact</string>
+    <string>msdyn_rmaid</string>
+    <string>msdyn_name</string>
+    <string>sbs_rmatype</string>
+    <string>msdyn_serviceaccount</string>
+    <string>msdyn_workorder</string>
+    <string>msdyn_systemstatus</string>
+  </SerializedBindings>
+  <MaxColumns>0</MaxColumns>
+  <Fetch version="1.0">
+    <entity name="msdyn_rma">
+      <filter type="and">
+        <condition attribute="statecode" operator="eq" value="0"/>
+        <condition attribute="ownerid" operator="eq-userid"/>
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="msdyn_name" method="Contains"/>
+    <attribute schema="msdyn_requestedbycontact" method="Contains" reference="true"/>
+    <attribute schema="msdyn_serviceaccount" method="Contains" reference="true"/>
+    <attribute schema="msdyn_systemstatus" method="Contains" reference="true"/>
+    <attribute schema="msdyn_workorder" method="Contains" reference="true"/>
+  </Search>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>275</Width>
+      <Height>30</Height>
+      <Buttons>EmailLink</Buttons>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_name">
+          <StyleName>black_bold</StyleName>
+          <Bounds>1,0,59,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_systemstatus">
+          <StyleName>black_auto</StyleName>
+          <Bounds>205,0,66,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_daterequested">
+          <StyleName>date</StyleName>
+          <Bounds>123,15,80,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="createdon">
+          <StyleName>date</StyleName>
+          <Bounds>115,0,80,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Created on:">
+          <IsConstant>true</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>62,0,52,14</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Req Date:">
+          <IsConstant>true</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>76,15,46,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="sbs_rmatype">
+          <StyleName>date</StyleName>
+          <Bounds>205,15,67,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="sbs_navno">
+          <StyleName>black_auto</StyleName>
+          <Bounds>27,15,48,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="NAV#">
+          <IsConstant>true</IsConstant>
+          <StyleName>date</StyleName>
+          <Bounds>0,15,26,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties/>
+</EntityList>

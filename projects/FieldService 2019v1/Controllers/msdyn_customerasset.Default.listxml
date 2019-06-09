@@ -1,0 +1,82 @@
+﻿<EntityList>
+  <Attributes>
+    <EntityName>msdyn_customerasset</EntityName>
+    <CamelCase>msdyn_customerasset</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding/>
+  </Attributes>
+  <Name>Default</Name>
+  <Kind>List</Kind>
+  <IsDefault>true</IsDefault>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>msdyn_name;msdyn_account</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_account</string>
+    <string>msdyn_customerassetcategory</string>
+    <string>msdyn_customerassetid</string>
+    <string>msdyn_name</string>
+    <string>vel_sn</string>
+  </SerializedBindings>
+  <MaxColumns>0</MaxColumns>
+  <Fetch version="1.0">
+    <entity name="msdyn_customerasset">
+      <filter type="and">
+        <condition attribute="statecode" operator="eq" value="0"/>
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="msdyn_account" method="Contains" reference="true"/>
+    <attribute schema="msdyn_masterasset" method="Contains" reference="true"/>
+    <attribute schema="msdyn_name" method="Contains"/>
+    <attribute schema="msdyn_parentasset" method="Contains" reference="true"/>
+    <attribute schema="msdyn_product" method="Contains" reference="true"/>
+    <attribute schema="msdyn_workorderproduct" method="Contains" reference="true"/>
+    <attribute schema="ownerid" method="Contains" reference="true"/>
+    <attribute schema="owningbusinessunit" method="Contains" reference="true"/>
+    <attribute schema="statuscode" method="Contains"/>
+    <attribute schema="vel_sn" method="Contains"/>
+  </Search>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>360</Width>
+      <Height>60</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_account">
+          <StyleName>gray</StyleName>
+          <Bounds>1,3,227,22</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>15</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_name">
+          <StyleName>primary</StyleName>
+          <Bounds>1,28,227,22</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_account">
+          <StyleName>gray</StyleName>
+          <Bounds>1,3,227,22</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="vel_sn">
+          <StyleName>gray</StyleName>
+          <Bounds>133,38,227,22</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_customerassetcategory">
+          <StyleName>gray</StyleName>
+          <Bounds>210,7,150,22</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties/>
+</EntityList>

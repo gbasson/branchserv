@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>new_disclaimer</EntityName>
+  <CamelCase>new_disclaimer</CamelCase>
+  <ClassBinding />
+  <SerializedChildren />
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab" flexi="0" flexiHeader="1" flexiMaxLines="0">
+      <Name>Disclaimer</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="new_servicecall2nd" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="new_relatedincident" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_openingnumbers" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_other" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_signaturename" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="new_disclaimer" image="false" separator="false">
+          <IsConstant>false</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="SignatureTab" flexi="1" flexiHeader="1" flexiMaxLines="0">
+      <Name>Signature</Name>
+      <Configuration />
+      <NoteSubject>Customer Signature</NoteSubject>
+      <Commands>4097</Commands>
+    </FormTab>
+  </SerializedChildrenV2>
+  <Navigation flexi="0" flexiHeader="1" flexiMaxLines="0">
+    <Name>Navigation</Name>
+    <SerializedChildren />
+  </Navigation>
+  <WorkflowLoad>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="7" version="0"&gt;&lt;branch e="true"&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.new_name&lt;/var&gt;&lt;arg&gt;String:FORCIBLE&lt;/arg&gt;&lt;op&gt;DoesNotContain&lt;/op&gt;&lt;/condition&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.new_name&lt;/var&gt;&lt;arg&gt;String:PREVENTATIVE&lt;/arg&gt;&lt;op&gt;DoesNotContain&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Form.sbs_openingnumbers.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.sbs_other.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</WorkflowLoad>
+  <SharedVariables>&lt;SharedVariables&gt;&lt;Variables&gt;&lt;SharedVariable usage="None"&gt;&lt;Name&gt;WO&lt;/Name&gt;&lt;CrmType&gt;Entity&lt;/CrmType&gt;&lt;InnerType&gt;msdyn_workorder&lt;/InnerType&gt;&lt;/SharedVariable&gt;&lt;/Variables&gt;&lt;/SharedVariables&gt;</SharedVariables>
+  <SharedVariableNames>
+    <string>WO.createdby</string>
+    <string>WO.createdon</string>
+    <string>WO.createdonbehalfby</string>
+    <string>WO.exchangerate</string>
+    <string>WO.importsequencenumber</string>
+    <string>WO.modifiedby</string>
+    <string>WO.modifiedon</string>
+    <string>WO.modifiedonbehalfby</string>
+    <string>WO.msdyn_address1</string>
+    <string>WO.msdyn_address2</string>
+    <string>WO.msdyn_address3</string>
+    <string>WO.msdyn_addressname</string>
+    <string>WO.msdyn_agreement</string>
+    <string>WO.msdyn_billingaccount</string>
+    <string>WO.msdyn_bookingsummary</string>
+    <string>WO.msdyn_childindex</string>
+    <string>WO.msdyn_city</string>
+    <string>WO.msdyn_closedby</string>
+    <string>WO.msdyn_country</string>
+    <string>WO.msdyn_customerasset</string>
+    <string>WO.msdyn_datewindowend</string>
+    <string>WO.msdyn_datewindowstart</string>
+    <string>WO.msdyn_estimatesubtotalamount</string>
+    <string>WO.msdyn_estimatesubtotalamount_base</string>
+    <string>WO.msdyn_followupnote</string>
+    <string>WO.msdyn_followuprequired</string>
+    <string>WO.msdyn_instructions</string>
+    <string>WO.msdyn_internalflags</string>
+    <string>WO.msdyn_isfollowup</string>
+    <string>WO.msdyn_ismobile</string>
+    <string>WO.msdyn_latitude</string>
+    <string>WO.msdyn_longitude</string>
+    <string>WO.msdyn_name</string>
+    <string>WO.msdyn_opportunityid</string>
+    <string>WO.msdyn_parentworkorder</string>
+    <string>WO.msdyn_postalcode</string>
+    <string>WO.msdyn_preferredresource</string>
+    <string>WO.msdyn_pricelist</string>
+    <string>WO.msdyn_primaryincidentdescription</string>
+    <string>WO.msdyn_primaryincidentestimatedduration</string>
+    <string>WO.msdyn_primaryincidenttype</string>
+    <string>WO.msdyn_priority</string>
+    <string>WO.msdyn_reportedbycontact</string>
+    <string>WO.msdyn_serviceaccount</string>
+    <string>WO.msdyn_servicerequest</string>
+    <string>WO.msdyn_serviceterritory</string>
+    <string>WO.msdyn_stateorprovince</string>
+    <string>WO.msdyn_substatus</string>
+    <string>WO.msdyn_subtotalamount</string>
+    <string>WO.msdyn_subtotalamount_base</string>
+    <string>WO.msdyn_systemstatus</string>
+    <string>WO.msdyn_taxable</string>
+    <string>WO.msdyn_taxcode</string>
+    <string>WO.msdyn_timeclosed</string>
+    <string>WO.msdyn_timefrompromised</string>
+    <string>WO.msdyn_timegroup</string>
+    <string>WO.msdyn_timegroupdetailselected</string>
+    <string>WO.msdyn_timetopromised</string>
+    <string>WO.msdyn_timewindowend</string>
+    <string>WO.msdyn_timewindowstart</string>
+    <string>WO.msdyn_totalamount</string>
+    <string>WO.msdyn_totalamount_base</string>
+    <string>WO.msdyn_totalsalestax</string>
+    <string>WO.msdyn_totalsalestax_base</string>
+    <string>WO.msdyn_worklocation</string>
+    <string>WO.msdyn_workorderid</string>
+    <string>WO.msdyn_workordersummary</string>
+    <string>WO.msdyn_workordertype</string>
+    <string>WO.new_afterhours</string>
+    <string>WO.new_assigntome</string>
+    <string>WO.new_billablewo</string>
+    <string>WO.new_branchcontact</string>
+    <string>WO.new_brandmodel</string>
+    <string>WO.new_callfrom</string>
+    <string>WO.new_callstatus</string>
+    <string>WO.new_canceledby</string>
+    <string>WO.new_cancellationreason</string>
+    <string>WO.new_completed</string>
+    <string>WO.new_coveringdispatcher</string>
+    <string>WO.new_createdbytech</string>
+    <string>WO.new_createsitesurvey</string>
+    <string>WO.new_customername</string>
+    <string>WO.new_customerpo</string>
+    <string>WO.new_cutkeydesc</string>
+    <string>WO.new_cutkeyqty</string>
+    <string>WO.new_email</string>
+    <string>WO.new_emergencyappt</string>
+    <string>WO.new_endtime</string>
+    <string>WO.new_exceptionreason</string>
+    <string>WO.new_hand</string>
+    <string>WO.new_hour</string>
+    <string>WO.new_incidenttype</string>
+    <string>WO.new_incompletereason</string>
+    <string>WO.new_key</string>
+    <string>WO.new_lastcall</string>
+    <string>WO.new_lockshopreturnneeded</string>
+    <string>WO.new_masterservicecall2</string>
+    <string>WO.new_navnumber</string>
+    <string>WO.new_noofboxesdrilled</string>
+    <string>WO.new_noofboxesrekeyed</string>
+    <string>WO.new_noofboxesrotated</string>
+    <string>WO.new_noofcomboschanged</string>
+    <string>WO.new_ntelimit</string>
+    <string>WO.new_other</string>
+    <string>WO.new_partsreceived</string>
+    <string>WO.new_phone</string>
+    <string>WO.new_primaryoncalltech</string>
+    <string>WO.new_priority</string>
+    <string>WO.new_rekeylockdesc</string>
+    <string>WO.new_rekeylockqty</string>
+    <string>WO.new_repairdoordesc</string>
+    <string>WO.new_repairdoorqty</string>
+    <string>WO.new_repairlockdesc</string>
+    <string>WO.new_repairlockqty</string>
+    <string>WO.new_replacementlockdesc</string>
+    <string>WO.new_replacementlockqty</string>
+    <string>WO.new_resolutioncode</string>
+    <string>WO.new_resolutionnotes</string>
+    <string>WO.new_resolutiontype</string>
+    <string>WO.new_returncallrequired</string>
+    <string>WO.new_secondaryoncalltech</string>
+    <string>WO.new_sendtolockshop</string>
+    <string>WO.new_service_code</string>
+    <string>WO.new_servicecode</string>
+    <string>WO.new_servicetype</string>
+    <string>WO.new_siteequipment</string>
+    <string>WO.new_starttime</string>
+    <string>WO.new_testrecord</string>
+    <string>WO.new_todaycalls</string>
+    <string>WO.new_unitdown</string>
+    <string>WO.overriddencreatedon</string>
+    <string>WO.ownerid</string>
+    <string>WO.owningbusinessunit</string>
+    <string>WO.owningteam</string>
+    <string>WO.owninguser</string>
+    <string>WO.processid</string>
+    <string>WO.sbs_acceptance_release</string>
+    <string>WO.sbs_authorizationformsigned</string>
+    <string>WO.sbs_corrigoworkorderid</string>
+    <string>WO.sbs_corrigoworkordernumber</string>
+    <string>WO.sbs_displaytechniciannotes</string>
+    <string>WO.sbs_notravelrequired</string>
+    <string>WO.stageid</string>
+    <string>WO.statuscode</string>
+    <string>WO.timezoneruleversionnumber</string>
+    <string>WO.transactioncurrencyid</string>
+    <string>WO.traversedpath</string>
+    <string>WO.utcconversiontimezonecode</string>
+    <string>WO.versionnumber</string>
+  </SharedVariableNames>
+  <PrimaryCommands>!defcmd</PrimaryCommands>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+  <SerializedContactInfo />
+</EntityForm>

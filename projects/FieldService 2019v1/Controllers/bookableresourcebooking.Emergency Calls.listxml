@@ -1,0 +1,181 @@
+﻿<EntityList>
+  <Attributes>
+    <EntityName>bookableresourcebooking</EntityName>
+    <CamelCase>bookableresourcebooking</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding/>
+  </Attributes>
+  <Name>Emergency Calls</Name>
+  <Kind>List</Kind>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>name</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_actualarrivaltime</string>
+    <string>msdyn_actualtravelduration</string>
+    <string>new_address1</string>
+    <string>bookableresourcebookingid</string>
+    <string>msdyn_bookingmethod</string>
+    <string>bookingstatus</string>
+    <string>msdyn_cascadecrewchanges</string>
+    <string>new_city</string>
+    <string>createdon</string>
+    <string>transactioncurrencyid</string>
+    <string>duration</string>
+    <string>endtime</string>
+    <string>msdyn_estimatedarrivaltime</string>
+    <string>msdyn_estimatedtravelduration</string>
+    <string>importsequencenumber</string>
+    <string>msdyn_latitude</string>
+    <string>msdyn_longitude</string>
+    <string>msdyn_milestraveled</string>
+    <string>modifiedon</string>
+    <string>name</string>
+    <string>ownerid</string>
+    <string>msdyn_preventtimestampcreation</string>
+    <string>new_primaryincidenttype</string>
+    <string>new_priority</string>
+    <string>resource</string>
+    <string>msdyn_resourcegroup</string>
+    <string>new_serviceaccount</string>
+    <string>msdyn_workorder</string>
+    <string>new_servicecalltype</string>
+    <string>starttime</string>
+    <string>new_state</string>
+    <string>statecode</string>
+    <string>statuscode</string>
+    <string>msdyn_totalbillableduration</string>
+    <string>msdyn_totalbreakduration</string>
+    <string>msdyn_totalcost</string>
+    <string>msdyn_totalcost_base</string>
+    <string>msdyn_totaldurationinprogress</string>
+  </SerializedBindings>
+  <HasGpsFields>true</HasGpsFields>
+  <CalendarFields>starttime;</CalendarFields>
+  <MaxColumns>0</MaxColumns>
+  <TemplateSelectorRule>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="7" version="0"&gt;&lt;branch e="true"&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.new_priority&lt;/var&gt;&lt;arg&gt;Lookup:msdyn_priority,3298cd5f-e863-e611-80e7-5065f38b5171,Emergency&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;TemplateIndex&lt;/var&gt;&lt;arg&gt;Integer:1&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</TemplateSelectorRule>
+  <Fetch version="1.0">
+    <entity name="bookableresourcebooking">
+      <filter type="and">
+        <condition attribute="new_priority" operator="eq" value="3298cd5f-e863-e611-80e7-5065f38b5171" uitype="msdyn_priority" uiname="Emergency"/>
+        <condition attribute="bookingstatus" operator="ne" value="c33410b9-1abe-4631-b4e9-6e4a1113af34" uitype="bookingstatus" uiname="Completed"/>
+      </filter>
+    </entity>
+  </Fetch>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>480</Width>
+      <Height>70</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="new_serviceaccount">
+          <StyleName>primary</StyleName>
+          <Bounds>250,0,182,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_state">
+          <StyleName>primary</StyleName>
+          <Bounds>427,24,49,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_city">
+          <StyleName>primary</StyleName>
+          <Bounds>250,24,130,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_address1">
+          <StyleName>primary</StyleName>
+          <Bounds>2,24,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="bookingstatus">
+          <StyleName>primary</StyleName>
+          <Bounds>8,46,201,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_primaryincidenttype">
+          <StyleName>primary</StyleName>
+          <Bounds>250,48,225,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_priority">
+          <StyleName>Primary_bold</StyleName>
+          <Bounds>150,0,80,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="starttime">
+          <StyleName>primary</StyleName>
+          <Bounds>4,0,125,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Red</Name>
+      <Width>480</Width>
+      <Height>70</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="new_serviceaccount">
+          <StyleName>primary</StyleName>
+          <Bounds>250,0,182,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_state">
+          <StyleName>primary</StyleName>
+          <Bounds>427,24,49,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_city">
+          <StyleName>primary</StyleName>
+          <Bounds>250,24,130,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_address1">
+          <StyleName>primary</StyleName>
+          <Bounds>2,24,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_servicecalltype">
+          <StyleName>primary</StyleName>
+          <Bounds>2,48,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_primaryincidenttype">
+          <StyleName>primary</StyleName>
+          <Bounds>250,48,225,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_priority">
+          <StyleName>Emergency Red</StyleName>
+          <Bounds>150,0,80,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="starttime">
+          <StyleName>primary</StyleName>
+          <Bounds>4,0,125,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties/>
+</EntityList>

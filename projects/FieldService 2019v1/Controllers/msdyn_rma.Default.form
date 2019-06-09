@@ -1,0 +1,122 @@
+﻿<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:dummy="0" flexi="0" fleximode="0" fullscreen="1" resize="0" version="2">
+  <IsContactForm>false</IsContactForm>
+  <EntityName>msdyn_rma</EntityName>
+  <CamelCase>msdyn_rma</CamelCase>
+  <WorkflowLoad>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="7" version="0"&gt;&lt;branch e="true"&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="true"&gt;&lt;var&gt;Entity.msdyn_name&lt;/var&gt;&lt;op&gt;DoesNotContainData&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;Form.msdyn_name.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.sbs_servicecallpart.IsVisible&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Entity.msdyn_daterequested&lt;/var&gt;&lt;func&gt;SetNow&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;definition e="false"&gt;&lt;var&gt;Supply_Chain&lt;/var&gt;&lt;arg&gt;String:parts@branchserv.com&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;type&gt;String&lt;/type&gt;&lt;/definition&gt;&lt;branch info="Can only create RMA from Service Call" e="true"&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_workorder&lt;/var&gt;&lt;op&gt;DoesNotContainData&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;IsFormEditable&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_workorder&lt;/var&gt;&lt;op&gt;ContainsData&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;definition e="false"&gt;&lt;var&gt;workorder&lt;/var&gt;&lt;arg&gt;var:Entity.msdyn_workorder&lt;/arg&gt;&lt;arg&gt;String:msdyn_workorder&lt;/arg&gt;&lt;func&gt;LoadReference&lt;/func&gt;&lt;type&gt;Entity&lt;/type&gt;&lt;/definition&gt;&lt;function e="false"&gt;&lt;var&gt;Entity.msdyn_serviceaccount&lt;/var&gt;&lt;arg&gt;var:workorder.msdyn_serviceaccount&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</WorkflowLoad>
+  <WorkflowItemChanged>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="7" version="0"&gt;&lt;branch info="Fetch NAV No" e="true"&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.sbs_part&lt;/var&gt;&lt;op&gt;ContainsData&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;definition e="false"&gt;&lt;var&gt;Product&lt;/var&gt;&lt;arg&gt;var:Entity.sbs_part&lt;/arg&gt;&lt;arg&gt;String:product&lt;/arg&gt;&lt;func&gt;LoadReference&lt;/func&gt;&lt;type&gt;Entity&lt;/type&gt;&lt;/definition&gt;&lt;function e="false"&gt;&lt;var&gt;Entity.sbs_navno&lt;/var&gt;&lt;arg&gt;var:Product.productnumber&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Form.sbs_navno.IsEnabled&lt;/var&gt;&lt;arg&gt;Boolean:False&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</WorkflowItemChanged>
+  <SharedVariables>&lt;SharedVariables&gt;&lt;Variables&gt;&lt;SharedVariable usage="None"&gt;&lt;Name&gt;Product&lt;/Name&gt;&lt;CrmType&gt;Entity&lt;/CrmType&gt;&lt;InnerType&gt;product&lt;/InnerType&gt;&lt;/SharedVariable&gt;&lt;/Variables&gt;&lt;/SharedVariables&gt;</SharedVariables>
+  <PrimaryCommands>EmailLink||</PrimaryCommands>
+  <SharedVariableNames>
+    <string>Product.createdby</string>
+    <string>Product.createdbyexternalparty</string>
+    <string>Product.createdon</string>
+    <string>Product.createdonbehalfby</string>
+    <string>Product.currentcost</string>
+    <string>Product.currentcost_base</string>
+    <string>Product.defaultuomid</string>
+    <string>Product.defaultuomscheduleid</string>
+    <string>Product.description</string>
+    <string>Product.entityimageid</string>
+    <string>Product.exchangerate</string>
+    <string>Product.hierarchypath</string>
+    <string>Product.iskit</string>
+    <string>Product.isstockitem</string>
+    <string>Product.modifiedby</string>
+    <string>Product.modifiedbyexternalparty</string>
+    <string>Product.modifiedon</string>
+    <string>Product.modifiedonbehalfby</string>
+    <string>Product.msdyn_converttocustomerasset</string>
+    <string>Product.msdyn_defaultvendor</string>
+    <string>Product.msdyn_fieldserviceproducttype</string>
+    <string>Product.msdyn_purchasename</string>
+    <string>Product.msdyn_taxable</string>
+    <string>Product.msdyn_upccode</string>
+    <string>Product.name</string>
+    <string>Product.new_nav</string>
+    <string>Product.organizationid</string>
+    <string>Product.overriddencreatedon</string>
+    <string>Product.parentproductid</string>
+    <string>Product.price</string>
+    <string>Product.price_base</string>
+    <string>Product.pricelevelid</string>
+    <string>Product.processid</string>
+    <string>Product.productid</string>
+    <string>Product.productnumber</string>
+    <string>Product.producttypecode</string>
+    <string>Product.producturl</string>
+    <string>Product.quantitydecimal</string>
+    <string>Product.quantityonhand</string>
+    <string>Product.sbs_vendoritemno</string>
+    <string>Product.size</string>
+    <string>Product.stageid</string>
+    <string>Product.standardcost</string>
+    <string>Product.standardcost_base</string>
+    <string>Product.statuscode</string>
+    <string>Product.stockvolume</string>
+    <string>Product.stockweight</string>
+    <string>Product.subjectid</string>
+    <string>Product.suppliername</string>
+    <string>Product.timezoneruleversionnumber</string>
+    <string>Product.transactioncurrencyid</string>
+    <string>Product.traversedpath</string>
+    <string>Product.utcconversiontimezonecode</string>
+    <string>Product.validfromdate</string>
+    <string>Product.validtodate</string>
+    <string>Product.vendorid</string>
+    <string>Product.vendorname</string>
+    <string>Product.vendorpartnumber</string>
+    <string>Product.versionnumber</string>
+  </SharedVariableNames>
+  <ClassBinding/>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+  <SerializedChildrenV2>
+    <FormTab xsi:type="DetailTab">
+      <Name>DefectivePartInfo</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_part"/>
+        <DetailItem SchemaName="sbs_navno"/>
+        <DetailItem SchemaName="sbs_quantity"/>
+        <DetailItem SchemaName="msdyn_description"/>
+        <DetailItem SchemaName="sbs_unitserialno"/>
+        <DetailItem SchemaName="sbs_defectivereturntrackingno" Style="MultiLine"/>
+        <DetailItem SchemaName="sbs_defectivereturnreceivedate" Style="MultiLine"/>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab" flexi="1">
+      <Name>General</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="msdyn_name"/>
+        <DetailItem SchemaName="sbs_rmatype"/>
+        <DetailItem SchemaName="sbs_vendor"/>
+        <DetailItem SchemaName="sbs_vendorrmano"/>
+        <DetailItem SchemaName="msdyn_systemstatus"/>
+        <DetailItem SchemaName="msdyn_daterequested"/>
+        <DetailItem SchemaName="sbs_requestedshipmethod" Style="MultiLine"/>
+        <DetailItem SchemaName="msdyn_serviceaccount"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="msdyn_referenceno"/>
+        <DetailItem SchemaName="msdyn_workorder"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+        <DetailItem SchemaName="sbs_servicecallpart"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
+      </SerializedChildren>
+    </FormTab>
+    <FormTab xsi:type="DetailTab">
+      <Name>SupplyChain</Name>
+      <SerializedChildren>
+        <DetailItem SchemaName="sbs_advancedreplacement"/>
+        <DetailItem SchemaName="sbs_customershippingaccount" Style="MultiLine"/>
+        <DetailItem SchemaName="sbs_replacementpartserialno" Style="MultiLine"/>
+        <DetailItem SchemaName="sbs_replacementpartshipdate" Style="MultiLine"/>
+        <DetailItem SchemaName="sbs_replacementtracking" Style="MultiLine"/>
+        <DetailItem SchemaName="sbs_vendorreplacementreceivedate" Style="MultiLine"/>
+      </SerializedChildren>
+    </FormTab>
+  </SerializedChildrenV2>
+</EntityForm>

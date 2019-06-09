@@ -1,0 +1,7 @@
+﻿Manufacturer=Microsoft Corporation
+ProductTitle=Field Service Mobile 2019
+ProductSubTitle=Release 1.0.0.16
+PoweredBy=Powered by Resco.Net
+Icon=Logo.Logo.png
+Website=https://dynamics.microsoft.com/
+SupportEmail=

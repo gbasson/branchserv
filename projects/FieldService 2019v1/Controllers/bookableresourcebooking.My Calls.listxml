@@ -1,0 +1,537 @@
+﻿<EntityList>
+  <Attributes>
+    <EntityName>bookableresourcebooking</EntityName>
+    <CamelCase>bookableresourcebooking</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding/>
+  </Attributes>
+  <Name>My Calls</Name>
+  <Kind>List</Kind>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>starttime;bookingstatus</OrderBy>
+  <SortAllowedFields>bookingstatus;starttime</SortAllowedFields>
+  <SerializedBindings>
+    <string>msdyn_actualarrivaltime</string>
+    <string>msdyn_actualtravelduration</string>
+    <string>new_address1</string>
+    <string>bookableresourcebookingid</string>
+    <string>msdyn_bookingmethod</string>
+    <string>bookingstatus</string>
+    <string>msdyn_cascadecrewchanges</string>
+    <string>new_city</string>
+    <string>createdon</string>
+    <string>transactioncurrencyid</string>
+    <string>duration</string>
+    <string>endtime</string>
+    <string>msdyn_estimatedarrivaltime</string>
+    <string>msdyn_estimatedtravelduration</string>
+    <string>importsequencenumber</string>
+    <string>msdyn_latitude</string>
+    <string>msdyn_longitude</string>
+    <string>msdyn_milestraveled</string>
+    <string>modifiedon</string>
+    <string>name</string>
+    <string>ownerid</string>
+    <string>msdyn_preventtimestampcreation</string>
+    <string>new_primaryincidenttype</string>
+    <string>new_priority</string>
+    <string>resource</string>
+    <string>msdyn_resourcegroup</string>
+    <string>new_serviceaccount</string>
+    <string>msdyn_workorder</string>
+    <string>new_servicecalltype</string>
+    <string>starttime</string>
+    <string>new_state</string>
+    <string>statecode</string>
+    <string>statuscode</string>
+    <string>msdyn_totalbillableduration</string>
+    <string>msdyn_totalbreakduration</string>
+    <string>msdyn_totalcost</string>
+    <string>msdyn_totalcost_base</string>
+    <string>msdyn_totaldurationinprogress</string>
+    <string>msdyn_workorder.msdyn_workorder.sbs_technician</string>
+    <string>ownerid.systemuser.fullname</string>
+  </SerializedBindings>
+  <HasGpsFields>true</HasGpsFields>
+  <CalendarFields>starttime;endtime</CalendarFields>
+  <MaxColumns>0</MaxColumns>
+  <TemplateSelectorRule>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="7" version="0"&gt;&lt;branch e="true"&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.new_priority&lt;/var&gt;&lt;arg&gt;Lookup:msdyn_priority,3298cd5f-e863-e611-80e7-5065f38b5171,Emergency&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="true"&gt;&lt;var&gt;TemplateIndex&lt;/var&gt;&lt;arg&gt;Integer:1&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.new_priority&lt;/var&gt;&lt;arg&gt;Lookup:msdyn_priority,ff734380-e963-e611-80e7-5065f38b5171,Appointment&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;TemplateIndex&lt;/var&gt;&lt;arg&gt;Integer:2&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.new_priority&lt;/var&gt;&lt;arg&gt;Lookup:msdyn_priority,3534da72-e963-e611-80e7-5065f38b5171,Standard&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;TemplateIndex&lt;/var&gt;&lt;arg&gt;Integer:3&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.new_priority&lt;/var&gt;&lt;arg&gt;Lookup:msdyn_priority,a0c4a5f2-c39a-e611-80ed-5065f38be0e1,PM&lt;/arg&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action e="true"&gt;&lt;function e="false"&gt;&lt;var&gt;TemplateIndex&lt;/var&gt;&lt;arg&gt;Integer:0&lt;/arg&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</TemplateSelectorRule>
+  <Fetch version="1.0">
+    <entity name="bookableresourcebooking">
+      <filter type="and">
+        <filter type="and">
+          <condition attribute="statecode" operator="eq" value="0"/>
+          <condition attribute="bookingstatus" operator="ne" value="c33410b9-1abe-4631-b4e9-6e4a1113af34" uitype="bookingstatus" uiname="Completed"/>
+          <condition attribute="bookingstatus" operator="ne" value="d109267c-05b5-e611-80f3-5065f38be0e1" uitype="bookingstatus" uiname="Incomplete"/>
+          <condition attribute="bookingstatus" operator="ne" value="0adbf4e6-86cc-4db0-9dbb-51b7d1ed4020" uitype="bookingstatus" uiname="Call Canceled"/>
+        </filter>
+      </filter>
+      <link-entity name="msdyn_workorder" alias="L0" from="msdyn_workorderid" to="msdyn_workorder" link-type="inner">
+        <link-entity name="bookableresource" alias="L2" from="bookableresourceid" to="sbs_technician" link-type="inner">
+          <filter type="and">
+            <condition attribute="userid" operator="eq-userid"/>
+          </filter>
+        </link-entity>
+      </link-entity>
+    </entity>
+  </Fetch>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>480</Width>
+      <Height>150</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="new_serviceaccount">
+          <StyleName>primary</StyleName>
+          <Bounds>226,24,141,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>1</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_state">
+          <StyleName>primary</StyleName>
+          <Bounds>365,45,113,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_city">
+          <StyleName>primary</StyleName>
+          <Bounds>226,46,122,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_address1">
+          <StyleName>primary</StyleName>
+          <Bounds>0,44,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_servicecalltype">
+          <StyleName>primary</StyleName>
+          <Bounds>0,66,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_primaryincidenttype">
+          <StyleName>primary</StyleName>
+          <Bounds>225,66,255,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_priority">
+          <StyleName>Primary_bold</StyleName>
+          <Bounds>0,22,141,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="starttime">
+          <StyleName>date</StyleName>
+          <Bounds>0,0,150,18</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="endtime">
+          <StyleName>date</StyleName>
+          <Bounds>158,0,129,18</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder">
+          <StyleName>Appointment Blue</StyleName>
+          <Bounds>142,23,81,19</Bounds>
+          <CellKind>4</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="bookingstatus">
+          <StyleName>primary</StyleName>
+          <Bounds>297,0,150,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="resource">
+          <StyleName>primary</StyleName>
+          <Bounds>100,109,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="ownerid.systemuser.fullname">
+          <StyleName>primary</StyleName>
+          <Bounds>102,130,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder.msdyn_workorder.sbs_technician">
+          <StyleName>primary</StyleName>
+          <Bounds>100,87,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Technician:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,86,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Resource:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,108,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Owner:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,130,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Red</Name>
+      <Width>480</Width>
+      <Height>150</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="new_serviceaccount">
+          <StyleName>primary</StyleName>
+          <Bounds>225,23,139,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>1</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_state">
+          <StyleName>primary</StyleName>
+          <Bounds>362,47,113,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_city">
+          <StyleName>primary</StyleName>
+          <Bounds>225,45,130,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_address1">
+          <StyleName>primary</StyleName>
+          <Bounds>1,45,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_servicecalltype">
+          <StyleName>primary</StyleName>
+          <Bounds>0,67,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_primaryincidenttype">
+          <StyleName>primary</StyleName>
+          <Bounds>225,68,244,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_priority">
+          <StyleName>Red</StyleName>
+          <Bounds>0,19,141,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="starttime">
+          <StyleName>date</StyleName>
+          <Bounds>0,0,122,18</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="endtime">
+          <StyleName>date</StyleName>
+          <Bounds>142,0,134,18</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder">
+          <StyleName>Blue</StyleName>
+          <Bounds>135,21,83,19</Bounds>
+          <CellKind>4</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="bookingstatus">
+          <StyleName>New Green</StyleName>
+          <Bounds>281,2,176,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="resource">
+          <StyleName>primary</StyleName>
+          <Bounds>130,109,139,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="ownerid.systemuser.fullname">
+          <StyleName>primary</StyleName>
+          <Bounds>130,130,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder.msdyn_workorder.sbs_technician">
+          <StyleName>primary</StyleName>
+          <Bounds>131,87,139,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Tech:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,87,139,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Owner:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,129,139,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Resource:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,107,139,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Blue</Name>
+      <Width>480</Width>
+      <Height>150</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="new_serviceaccount">
+          <StyleName>primary</StyleName>
+          <Bounds>224,23,144,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>1</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_state">
+          <StyleName>primary</StyleName>
+          <Bounds>362,46,113,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_city">
+          <StyleName>primary</StyleName>
+          <Bounds>225,44,130,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_address1">
+          <StyleName>primary</StyleName>
+          <Bounds>1,44,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_servicecalltype">
+          <StyleName>primary</StyleName>
+          <Bounds>0,67,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_primaryincidenttype">
+          <StyleName>primary</StyleName>
+          <Bounds>226,68,239,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_priority">
+          <StyleName>Blue</StyleName>
+          <Bounds>0,22,141,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="starttime">
+          <StyleName>date</StyleName>
+          <Bounds>0,0,138,18</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="endtime">
+          <StyleName>date</StyleName>
+          <Bounds>143,0,121,18</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder">
+          <StyleName>Green</StyleName>
+          <Bounds>137,23,81,19</Bounds>
+          <CellKind>4</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="bookingstatus">
+          <StyleName>New Green</StyleName>
+          <Bounds>271,0,177,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="resource">
+          <StyleName>primary</StyleName>
+          <Bounds>122,106,144,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="ownerid.systemuser.fullname">
+          <StyleName>primary</StyleName>
+          <Bounds>123,130,124,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder.msdyn_workorder.sbs_technician">
+          <StyleName>primary</StyleName>
+          <Bounds>123,86,144,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Technician:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,85,124,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Resource:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,104,124,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Owner:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,130,124,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Green</Name>
+      <Width>480</Width>
+      <Height>150</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="new_serviceaccount">
+          <StyleName>primary</StyleName>
+          <Bounds>226,23,141,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>1</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_state">
+          <StyleName>primary</StyleName>
+          <Bounds>359,46,113,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_city">
+          <StyleName>primary</StyleName>
+          <Bounds>226,44,130,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_address1">
+          <StyleName>primary</StyleName>
+          <Bounds>1,44,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_servicecalltype">
+          <StyleName>primary</StyleName>
+          <Bounds>0,66,207,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_primaryincidenttype">
+          <StyleName>primary</StyleName>
+          <Bounds>225,67,243,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_priority">
+          <StyleName>Green</StyleName>
+          <Bounds>0,20,141,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="endtime">
+          <StyleName>date</StyleName>
+          <Bounds>163,0,127,18</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder">
+          <StyleName>Appointment Blue</StyleName>
+          <Bounds>141,22,79,19</Bounds>
+          <CellKind>4</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="bookingstatus">
+          <StyleName>New Green</StyleName>
+          <Bounds>302,0,149,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="resource">
+          <StyleName>primary</StyleName>
+          <Bounds>108,107,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="ownerid.systemuser.fullname">
+          <StyleName>primary</StyleName>
+          <Bounds>109,128,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_workorder.msdyn_workorder.sbs_technician">
+          <StyleName>primary</StyleName>
+          <Bounds>103,87,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Resource:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>2,108,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="starttime">
+          <StyleName>date</StyleName>
+          <Bounds>0,0,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Technician:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>0,89,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Owner:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary</StyleName>
+          <Bounds>2,128,100,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>1</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties/>
+</EntityList>

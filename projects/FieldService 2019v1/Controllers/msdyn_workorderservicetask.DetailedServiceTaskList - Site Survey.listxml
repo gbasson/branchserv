@@ -1,0 +1,68 @@
+﻿<EntityList>
+  <Attributes>
+    <EntityName>msdyn_workorderservicetask</EntityName>
+    <CamelCase>msdyn_workorderservicetask</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding/>
+  </Attributes>
+  <Name>DetailedServiceTaskList - Site Survey</Name>
+  <Kind>AssociatedList</Kind>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>msdyn_name</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_percentcomplete</string>
+    <string>new_completed</string>
+    <string>msdyn_customerasset</string>
+    <string>msdyn_description</string>
+    <string>msdyn_estimatedduration</string>
+    <string>msdyn_name</string>
+    <string>msdyn_workorderservicetaskid</string>
+    <string>msdyn_tasktype</string>
+    <string>msdyn_customerasset.msdyn_customerasset.msdyn_customerassetcategory</string>
+  </SerializedBindings>
+  <MaxColumns>0</MaxColumns>
+  <Fetch version="1.0">
+    <entity name="msdyn_workorderservicetask">
+      <filter type="and">
+        <condition attribute="msdyn_workorderincidentname" operator="like" value="%Site Survey%"/>
+      </filter>
+    </entity>
+  </Fetch>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>300</Width>
+      <Height>75</Height>
+      <Buttons>Open.msdyn_workorderservicetask.msdyn_customerasset</Buttons>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_tasktype">
+          <StyleName>primary_line10</StyleName>
+          <Bounds>141,1,150,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_customerasset.msdyn_customerasset.msdyn_customerassetcategory">
+          <StyleName>primary_line10</StyleName>
+          <Bounds>20,25,270,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_customerasset">
+          <StyleName>primary</StyleName>
+          <Bounds>19,48,271,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_name">
+          <StyleName>primary_line10</StyleName>
+          <Bounds>21,2,115,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties/>
+</EntityList>

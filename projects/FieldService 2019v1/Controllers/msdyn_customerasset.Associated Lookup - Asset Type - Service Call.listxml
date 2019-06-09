@@ -1,0 +1,120 @@
+﻿<EntityList>
+  <Attributes>
+    <EntityName>msdyn_customerasset</EntityName>
+    <CamelCase>msdyn_customerasset</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding/>
+  </Attributes>
+  <Name>Associated Lookup - Asset Type - Service Call</Name>
+  <Kind>AssociatedList</Kind>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>msdyn_account;msdyn_customerassetcategory;msdyn_customerassetid</OrderBy>
+  <SharedVariables>&lt;SharedVariables&gt;&lt;Variables&gt;&lt;/Variables&gt;&lt;/SharedVariables&gt;</SharedVariables>
+  <SerializedBindings>
+    <string>msdyn_account</string>
+    <string>msdyn_customerassetcategory</string>
+    <string>msdyn_customerassetid</string>
+    <string>msdyn_name</string>
+    <string>vel_sn</string>
+  </SerializedBindings>
+  <IsHidden>true</IsHidden>
+  <MaxColumns>0</MaxColumns>
+  <TemplateSelectorRule>&lt;?xml version="1.0" ?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="11" version="0"&gt;&lt;branch e="true" info="Check Asset Category" &gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,40748a7c-f17c-e911-a95b-000d3a34e313,Alarm&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_Alarm&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,42748a7c-f17c-e911-a95b-000d3a34e313,ATM&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_ATM&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,46748a7c-f17c-e911-a95b-000d3a34e313,Currency Counter&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_Counter&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,44748a7c-f17c-e911-a95b-000d3a34e313,Cash Dispenser&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_Dispenser&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,52748a7c-f17c-e911-a95b-000d3a34e313,Night Depository&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_Deposit&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,4c748a7c-f17c-e911-a95b-000d3a34e313,DVR&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_DVR&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,54748a7c-f17c-e911-a95b-000d3a34e313,Point to Point&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_P2P&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,58748a7c-f17c-e911-a95b-000d3a34e313,Safe&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_Safe&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,5a748a7c-f17c-e911-a95b-000d3a34e313,Safe Deposit&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_SafetyDeposit&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,3e748a7c-f17c-e911-a95b-000d3a34e313,Advanced Terminal&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_Terminal&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,68748a7c-f17c-e911-a95b-000d3a34e313,Video&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_Video&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="false"&gt;&lt;conditions e="false" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.msdyn_customerassetcategory&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Lookup:msdyn_customerassetcategory,66748a7c-f17c-e911-a95b-000d3a34e313,Vault&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Row.SiteAsset.Style&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;String:SiteAsset_Vault&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</TemplateSelectorRule>
+  <Fetch version="1.0">
+    <entity name="msdyn_customerasset">
+      <filter type="and">
+        <condition attribute="statecode" operator="eq" value="0"/>
+      </filter>
+      <link-entity name="msdyn_workorderservicetask" alias="L2" from="msdyn_customerasset" to="msdyn_customerassetid" link-type="inner">
+        <link-entity name="msdyn_workorder" alias="L3" from="msdyn_workorderid" to="msdyn_workorder" link-type="inner">
+          <filter type="and">
+            <condition attribute="msdyn_name" operator="eq" value="{{msdyn_name}}"/>
+          </filter>
+        </link-entity>
+      </link-entity>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="msdyn_account" method="Contains" reference="true"/>
+    <attribute schema="msdyn_masterasset" method="Contains" reference="true"/>
+    <attribute schema="msdyn_name" method="Contains"/>
+    <attribute schema="msdyn_parentasset" method="Contains" reference="true"/>
+    <attribute schema="msdyn_product" method="Contains" reference="true"/>
+    <attribute schema="msdyn_workorderproduct" method="Contains" reference="true"/>
+    <attribute schema="ownerid" method="Contains" reference="true"/>
+    <attribute schema="owningbusinessunit" method="Contains" reference="true"/>
+    <attribute schema="statuscode" method="Contains" reference="true"/>
+  </Search>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>360</Width>
+      <Height>72</Height>
+      <SerializedSelectedBackground>-1</SerializedSelectedBackground>
+      <SerializedChildren>
+        <CellTemplate SchemaName="Serial No.:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary_line9Bold</StyleName>
+          <Bounds>40,55,60,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Account:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary_line11-bold</StyleName>
+          <Bounds>40,2,60,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Category:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary_line9Bold</StyleName>
+          <Bounds>40,38,60,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="vel_sn">
+          <StyleName>primary_line8</StyleName>
+          <Bounds>103,55,225,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_customerassetcategory">
+          <StyleName>primary_line9</StyleName>
+          <Bounds>103,38,225,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_account">
+          <StyleName>primary_line11-bold</StyleName>
+          <Bounds>103,2,225,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Asset No:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary_line10_bold</StyleName>
+          <Bounds>40,20,60,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_name">
+          <StyleName>primary_line10</StyleName>
+          <Bounds>103,20,225,15</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="SiteAsset">
+          <IsConstant>true</IsConstant>
+          <StyleName>SiteAsset</StyleName>
+          <Bounds>0,15,40,40</Bounds>
+          <CellKind>1</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties/>
+</EntityList>

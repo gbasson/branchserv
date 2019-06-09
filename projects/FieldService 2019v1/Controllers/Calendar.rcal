@@ -1,0 +1,11 @@
+﻿<Tourplan>
+  <Items>
+    <TourplanComponent>
+      <Binding>bookableresourcebooking</Binding>
+    </TourplanComponent>
+  </Items>
+  <Version>1</Version>
+  <AllowedViews>@bookableresourcebooking.*:bookableresourcebooking.@My Calls</AllowedViews>
+  <BusinessDaysMask>0</BusinessDaysMask>
+  <ViewsMask>0</ViewsMask>
+</Tourplan>

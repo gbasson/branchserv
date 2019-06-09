@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<style>
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .button2 {background-color: #008CBA;} /* Blue */
+  .button3 {background-color: #f44336;} /* Red */
+  .button4 {background-color: #555555; width: 50%;} /* Black */
+
+
+  div.a {
+      text-align: center;
+      font-family: Helvetica, Arial, sans-serif;
+  }
+
+
+  </style>
+	<meta charset="utf-8" />
+	<title>Update Service Task Status</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="initial-scale=1, user-scalable=no" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-store" />
+	<script src="../JSBridge.js"></script>
+
+</head>
+<body>
+<div class="a">
+<h2>Create Site Asset</h2>
+<button class="button button4" onclick="createAsset()">Add New Asset</button>
+</div>
+<br>
+<div class="a">
+There are currently no assets assigned to this account.
+</div>
+
+<script type="text/javascript">
+
+function createAsset() {
+			
+			//
+			var entity = entityForm.entity;
+			var svceAcct = entity.properties.msdyn_account;
+			
+			var newAsset = new MobileCRM.DynamicEntity.createNew("msdyn_customerasset");
+
+			MobileCRM.bridge.alert(svceAcct);
+		}
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=false">
+	<script type="text/javascript" src="JSBridge.js"></script>
+</head>
+<body>
+	<button style="padding:0.4em 2em;height:120px;width:200px;border:solid 1px rgba(20,20,20,1);border-radius:12px;box-shadow:inset 1px 1px 1px rgba(255,255,255,0.05), inset 0 0 35px rgba(0,0,0,0.6), 0 5px 5px -4px rgba(0,0,0,0.8);" onclick="setTime('start')">Start Time</button>
+	<button style="padding:0.4em 2em;height:120px;width:200px;border:solid 1px rgba(20,20,20,1);border-radius:12px;box-shadow:inset 1px 1px 1px rgba(255,255,255,0.05), inset 0 0 35px rgba(0,0,0,0.6), 0 5px 5px -4px rgba(0,0,0,0.8)" onclick="setTime('end')">End Time</button>
+
+	<script type="text/javascript">
+
+		function formOnload() {
+		   window.parent.setTimeStamp = setTimeStamp;
+		   window.parent.setEndTimeStamp = setEndTimeStamp;
+		}
+
+		function setTime(timeToset) {
+			MobileCRM.UI.EntityForm.requestObject(function (entityForm) {
+				/// <param name='entityForm' type='MobileCRM.UI.EntityForm'/>
+				entity = entityForm.entity;
+				if (timeToset == "start") {
+					var d = new Date();
+					entity.properties.new_starttimestamp1 = d;
+				}
+				else if (timeToset == "end") {
+					var endTime = new Date();
+
+					/// USE THIS TO WORK WITH JSBRIDGE.
+					if (entity !== null)
+						entity.properties.new_stoptimestamp1 = endTime;
+
+					var startTime = entity.properties.new_starttimestamp1;
+					entity.properties.new_timestampcalc1 = DateDiff(endTime, startTime);
+				}
+				else
+					throw new MobileCrmException("Exception was thrown at setTime(), argument missing exception.");
+			}, MobileCRM.bridge.alert, null);
+		}
+
+	/*
+	var d1 = new Date("2015-07-25T12:05:30");
+	var d2 = new Date();
+	console.log(DateDiff(d2, d1));
+	*/
+	function DateDiff(d2, d1) {
+		var seconds = 0;
+		var minutes = 0;
+		var hours = 0;
+		var days = 0;
+		var months = 0;
+		var years = 0;
+		var subtract = 0;
+
+		if(d2.getSeconds() < d1.getSeconds()) {
+			seconds = (d2.getSeconds() + 60) - d1.getSeconds();
+			subtract = 1;
+		} else {
+			seconds = d2.getSeconds() - d1.getSeconds();
+		}
+
+		if(d2.getMinutes() < d1.getMinutes()) {
+			minutes = (d2.getMinutes() + 60 - subtract) - d1.getMinutes();
+			subtract = 1;
+		} else {
+			minutes = (d2.getMinutes() - subtract) - d1.getMinutes();
+			subtract = 0;
+		}
+
+		if(d2.getHours() < d1.getHours()) {
+			hours = (d2.getHours() + 24 - subtract) - d1.getHours();
+			subtract = 1;
+		} else {
+			hours = (d2.getHours() - subtract) - d1.getHours();
+			subtract = 0;
+		}
+
+		if(d2.getDate() < d1.getDate()) {
+			days = (d2.getDate() + 30 - subtract) - d1.getDate();
+			subtract = 1;
+		} else {
+			days = (d2.getDate() - subtract) - d1.getDate();
+			subtract = 0;
+		}
+
+		if(d2.getMonth() < d1.getMonth()) {
+			months = (d2.getMonth() + 12 - subtract) - d1.getMonth();
+			subtract = 1;
+		} else {
+			months = (d2.getMonth() - subtract) - d1.getMonth();
+			subtract = 0;
+		}
+
+		years = (d2.getFullYear() - subtract) - d1.getFullYear();
+
+		return years + ":" + months + ":" + days + ":" + hours + ":" + minutes + ":" + seconds;
+	}
+
+	</script>
+</body>
+</html>

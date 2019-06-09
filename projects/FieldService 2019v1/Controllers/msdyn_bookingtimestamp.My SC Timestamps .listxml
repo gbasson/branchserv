@@ -1,0 +1,111 @@
+﻿<EntityList>
+  <Attributes>
+    <EntityName>msdyn_bookingtimestamp</EntityName>
+    <CamelCase>msdyn_bookingtimestamp</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding/>
+  </Attributes>
+  <Name>My SC Timestamps </Name>
+  <Kind>List</Kind>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>msdyn_name</OrderBy>
+  <SerializedBindings>
+    <string>msdyn_booking</string>
+    <string>msdyn_bookingtimestampid</string>
+    <string>createdon</string>
+    <string>msdyn_generatejournals</string>
+    <string>modifiedon</string>
+    <string>msdyn_name</string>
+    <string>ownerid</string>
+    <string>new_servicecall</string>
+    <string>msdyn_systemstatus</string>
+    <string>msdyn_timestampsource</string>
+    <string>msdyn_timestamptime</string>
+  </SerializedBindings>
+  <IsHidden>true</IsHidden>
+  <MaxColumns>0</MaxColumns>
+  <Fetch version="1.0">
+    <entity name="msdyn_bookingtimestamp">
+      <filter type="and">
+        <condition attribute="ownerid" operator="eq-userid"/>
+      </filter>
+    </entity>
+  </Fetch>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>275</Width>
+      <Height>60</Height>
+      <SerializedChildren>
+        <CellTemplate SchemaName="msdyn_systemstatus">
+          <StyleName>primary_line</StyleName>
+          <Bounds>200,0,75,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>4</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_timestamptime">
+          <StyleName>primary_line</StyleName>
+          <Bounds>70,40,153,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_booking">
+          <StyleName>primary_line</StyleName>
+          <Bounds>70,0,70,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="new_servicecall">
+          <StyleName>primary_line</StyleName>
+          <Bounds>70,20,70,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Booking ID:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary_line_bold</StyleName>
+          <Bounds>5,0,65,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Svce Call ID:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary_line_bold</StyleName>
+          <Bounds>5,20,65,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Sys. Status:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary_line_bold</StyleName>
+          <Bounds>140,0,60,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Timestamp:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary_line_bold</StyleName>
+          <Bounds>5,40,65,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="Source:">
+          <IsConstant>true</IsConstant>
+          <StyleName>primary_line_bold</StyleName>
+          <Bounds>140,20,40,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="msdyn_timestampsource">
+          <StyleName>primary_line</StyleName>
+          <Bounds>180,20,95,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties/>
+</EntityList>

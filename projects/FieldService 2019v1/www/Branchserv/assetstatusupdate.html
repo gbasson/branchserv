@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<style>
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .button2 {background-color: #008CBA;} /* Blue */
+  .button3 {background-color: #f44336;} /* Red */
+  .button4 {background-color: #555555; width: 50%;} /* Black */
+
+
+  div.a {
+      text-align: center;
+      font-family: Helvetica, Arial, sans-serif;
+  }
+
+
+  </style>
+	<meta charset="utf-8" />
+	<title>Update Service Task Status</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="initial-scale=1, user-scalable=no" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-store" />
+	<script src="../JSBridge.js"></script>
+
+</head>
+<body>
+<div class="a">
+<h2>Update Site Asset</h2>
+<button class="button" onclick="statusUpdate('nochange')">No Change</button>
+<button class="button button2" onclick="statusUpdate('update')">Updated</button>
+<button class="button button3" onclick="statusUpdate('notavail')">Not on Site</button>
+</div>
+<br>
+<div class="a">To edit an asset click on the Customer Asset link in the form below</div>
+<script type="text/javascript">
+		function statusUpdate(status) {
+			MobileCRM.UI.EntityForm.requestObject(function (entityForm) {
+				/// <param name='entityForm' type='MobileCRM.UI.EntityForm'/>
+				entity = entityForm.entity;
+				
+				if (status == "nochange") {
+					entity.properties.vel_sitesurveystatus = 500000000;
+					entity.properties.msdyn_percentcomplete = 100;
+				}
+				else if (status == "update") {
+					entity.properties.vel_sitesurveystatus = 500000001;
+					entity.properties.msdyn_percentcomplete = 100;
+				}
+				else if (status == "notavail") {
+					entity.properties.vel_sitesurveystatus = 500000002;
+					entity.properties.msdyn_percentcomplete = 100;
+				}
+				else
+					throw new MobileCrmException("Exception was thrown at setTime(), argument missing exception.");
+			}, MobileCRM.bridge.alert, null);
+		}
+	</script>
+</body>
+</html>
